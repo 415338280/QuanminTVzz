@@ -9,5 +9,6 @@
 #ifndef Constant_h
 #define Constant_h
 
-
+#define KBeasPath @"http://www.quanmin.tv"
+#define kLivePath @"/json/play/list%@.json"
 #endif /* Constant_h */

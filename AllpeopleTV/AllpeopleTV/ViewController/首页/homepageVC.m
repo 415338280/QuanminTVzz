@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.tableHeaderView.frame = CGRectMake(0, 0, 0, 10);
+   
    // [self.tableView registerClass:[UITableView class] forCellReuseIdentifier:@"call"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

@@ -11,7 +11,17 @@
 
 
 @implementation NetManager
-
++getLiveModelWithPage:(NSString*)page CompletionHandeler:(Myblock)completionHandeler;
+{
+   
+        NSString *path = [NSString stringWithFormat:kLivePath,page];
+ 
+    
+    return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
+        !completionHandeler ?: completionHandeler([liveModel pares:responseObj],error);
+    }];
+    
+}
 @end
 
 

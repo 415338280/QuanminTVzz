@@ -15,6 +15,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [NetManager getLiveModelWithPage:@"" CompletionHandeler:^(NSArray<liveModel *> *model, NSError *error) {
+        NSLog(@"");
+    }];
     self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     _window.rootViewController = [TableViewController new];

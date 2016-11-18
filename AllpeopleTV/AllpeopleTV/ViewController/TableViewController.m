@@ -22,7 +22,6 @@
 -(homepageVC *)homeVC
 {
     if (!_homeVC) {
-        _homeVC = [[homepageVC alloc]initWithStyle:UITableViewStyleGrouped];
         _homeVC.title = @"首页";
         _homeVC.tabBarItem.image = [UIImage imageNamed:@"btn_tabbar_home_normal_25x25_"];
         _homeVC.tabBarItem.selectedImage = [UIImage imageNamed:@"btn_tabbar_home_selected_25x25_"];
@@ -70,6 +69,7 @@
     UINavigationController* navi3 = [[UINavigationController alloc]initWithRootViewController:self.MyHomeVC];
     self.viewControllers = @[navi0, navi1, navi2, navi3];
     [[UITabBar appearance]setTintColor:[UIColor redColor]];
+ 
    // [[UIBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
    // [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
     //[[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor redColor], NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateSelected];

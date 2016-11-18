@@ -1,15 +1,13 @@
 //
-//  NSObject+Pares.h
+//  llvelayout.h
 //  AllpeopleTV
 //
 //  Created by tarena on 16/11/18.
 //  Copyright © 2016年 Zx. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface NSObject (Pares)<YYModel>
-
-+(id)pares:(id)JSON;
+@interface llvelayout : UICollectionViewLayout
 
 @end

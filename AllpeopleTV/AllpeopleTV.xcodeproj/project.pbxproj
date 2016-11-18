@@ -22,6 +22,9 @@
 		85D596BA1DDEF3EC009AC9CE /* programaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596B91DDEF3EC009AC9CE /* programaVC.m */; };
 		85D596BD1DDEF409009AC9CE /* liveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596BC1DDEF409009AC9CE /* liveVC.m */; };
 		85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596BF1DDEF423009AC9CE /* MyHomeVC.m */; };
+		85DFFA761DDF2C5A00EAEE95 /* liveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DFFA751DDF2C5A00EAEE95 /* liveModel.m */; };
+		85DFFA7C1DDF365600EAEE95 /* liveTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DFFA7B1DDF365600EAEE95 /* liveTVCell.m */; };
+		85DFFA7F1DDF3BA200EAEE95 /* llvelayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DFFA7E1DDF3BA200EAEE95 /* llvelayout.m */; };
 		E9CC77EC67BB1E3DE2FDEB9A /* libPods-AllpeopleTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +59,13 @@
 		85D596BC1DDEF409009AC9CE /* liveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liveVC.m; sourceTree = "<group>"; };
 		85D596BE1DDEF423009AC9CE /* MyHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHomeVC.h; sourceTree = "<group>"; };
 		85D596BF1DDEF423009AC9CE /* MyHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHomeVC.m; sourceTree = "<group>"; };
-		85D596C41DDF04BB009AC9CE /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		85DFFA741DDF2C5A00EAEE95 /* liveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liveModel.h; sourceTree = "<group>"; };
+		85DFFA751DDF2C5A00EAEE95 /* liveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liveModel.m; sourceTree = "<group>"; };
+		85DFFA791DDF30DE00EAEE95 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		85DFFA7A1DDF365600EAEE95 /* liveTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liveTVCell.h; sourceTree = "<group>"; };
+		85DFFA7B1DDF365600EAEE95 /* liveTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liveTVCell.m; sourceTree = "<group>"; };
+		85DFFA7D1DDF3BA200EAEE95 /* llvelayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llvelayout.h; sourceTree = "<group>"; };
+		85DFFA7E1DDF3BA200EAEE95 /* llvelayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = llvelayout.m; sourceTree = "<group>"; };
 		B00C938F55D556E01B4DB968 /* Pods-AllpeopleTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.debug.xcconfig"; sourceTree = "<group>"; };
 		ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AllpeopleTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,6 +188,7 @@
 		85D596AB1DDEF2FA009AC9CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				85DFFA731DDF2C2900EAEE95 /* 直播Model */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +238,10 @@
 			children = (
 				85D596BB1DDEF409009AC9CE /* liveVC.h */,
 				85D596BC1DDEF409009AC9CE /* liveVC.m */,
+				85DFFA7A1DDF365600EAEE95 /* liveTVCell.h */,
+				85DFFA7B1DDF365600EAEE95 /* liveTVCell.m */,
+				85DFFA7D1DDF3BA200EAEE95 /* llvelayout.h */,
+				85DFFA7E1DDF3BA200EAEE95 /* llvelayout.m */,
 			);
 			path = "直播";
 			sourceTree = "<group>";
@@ -235,9 +249,18 @@
 		85D596C31DDF04B2009AC9CE /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				85D596C41DDF04BB009AC9CE /* Constant.h */,
+				85DFFA791DDF30DE00EAEE95 /* Constant.h */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		85DFFA731DDF2C2900EAEE95 /* 直播Model */ = {
+			isa = PBXGroup;
+			children = (
+				85DFFA741DDF2C5A00EAEE95 /* liveModel.h */,
+				85DFFA751DDF2C5A00EAEE95 /* liveModel.m */,
+			);
+			name = "直播Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +389,9 @@
 				85D596B71DDEF3D3009AC9CE /* homepageVC.m in Sources */,
 				85D596A61DDEF0DC009AC9CE /* NSObject+Pares.m in Sources */,
 				85D596A31DDEF0B4009AC9CE /* NSString+ZX_Method.m in Sources */,
+				85DFFA7F1DDF3BA200EAEE95 /* llvelayout.m in Sources */,
 				85D596981DDEEF87009AC9CE /* BaseNetManager.m in Sources */,
+				85DFFA761DDF2C5A00EAEE95 /* liveModel.m in Sources */,
 				85D596991DDEEF87009AC9CE /* NetManager.m in Sources */,
 				85D596B41DDEF3A5009AC9CE /* TableViewController.m in Sources */,
 				85D596A91DDEF0F0009AC9CE /* UIView+HUD.m in Sources */,
@@ -374,6 +399,7 @@
 				85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
 				85D596691DDEE879009AC9CE /* main.m in Sources */,
+				85DFFA7C1DDF365600EAEE95 /* liveTVCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
