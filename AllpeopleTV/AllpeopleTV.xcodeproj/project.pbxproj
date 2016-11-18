@@ -9,10 +9,19 @@
 /* Begin PBXBuildFile section */
 		85D596691DDEE879009AC9CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596681DDEE879009AC9CE /* main.m */; };
 		85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5966B1DDEE879009AC9CE /* AppDelegate.m */; };
-		85D5966F1DDEE879009AC9CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5966E1DDEE879009AC9CE /* ViewController.m */; };
 		85D596721DDEE879009AC9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596701DDEE879009AC9CE /* Main.storyboard */; };
 		85D596741DDEE87A009AC9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D596731DDEE87A009AC9CE /* Assets.xcassets */; };
 		85D596771DDEE87A009AC9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */; };
+		85D596981DDEEF87009AC9CE /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596931DDEEF87009AC9CE /* BaseNetManager.m */; };
+		85D596991DDEEF87009AC9CE /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596951DDEEF87009AC9CE /* NetManager.m */; };
+		85D596A31DDEF0B4009AC9CE /* NSString+ZX_Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596A21DDEF0B4009AC9CE /* NSString+ZX_Method.m */; };
+		85D596A61DDEF0DC009AC9CE /* NSObject+Pares.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596A51DDEF0DC009AC9CE /* NSObject+Pares.m */; };
+		85D596A91DDEF0F0009AC9CE /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596A81DDEF0F0009AC9CE /* UIView+HUD.m */; };
+		85D596B41DDEF3A5009AC9CE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596B31DDEF3A5009AC9CE /* TableViewController.m */; };
+		85D596B71DDEF3D3009AC9CE /* homepageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596B61DDEF3D3009AC9CE /* homepageVC.m */; };
+		85D596BA1DDEF3EC009AC9CE /* programaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596B91DDEF3EC009AC9CE /* programaVC.m */; };
+		85D596BD1DDEF409009AC9CE /* liveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596BC1DDEF409009AC9CE /* liveVC.m */; };
+		85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596BF1DDEF423009AC9CE /* MyHomeVC.m */; };
 		E9CC77EC67BB1E3DE2FDEB9A /* libPods-AllpeopleTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +31,32 @@
 		85D596681DDEE879009AC9CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85D5966A1DDEE879009AC9CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85D5966B1DDEE879009AC9CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		85D5966D1DDEE879009AC9CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		85D5966E1DDEE879009AC9CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		85D596711DDEE879009AC9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		85D596731DDEE87A009AC9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85D596731DDEE87A009AC9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		85D596761DDEE87A009AC9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85D596781DDEE87A009AC9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85D596921DDEEF87009AC9CE /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		85D596931DDEEF87009AC9CE /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		85D596941DDEEF87009AC9CE /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		85D596951DDEEF87009AC9CE /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		85D5969A1DDEEF9C009AC9CE /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		85D596A11DDEF0B4009AC9CE /* NSString+ZX_Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZX_Method.h"; sourceTree = "<group>"; };
+		85D596A21DDEF0B4009AC9CE /* NSString+ZX_Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZX_Method.m"; sourceTree = "<group>"; };
+		85D596A41DDEF0DC009AC9CE /* NSObject+Pares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Pares.h"; sourceTree = "<group>"; };
+		85D596A51DDEF0DC009AC9CE /* NSObject+Pares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Pares.m"; sourceTree = "<group>"; };
+		85D596A71DDEF0F0009AC9CE /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		85D596A81DDEF0F0009AC9CE /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		85D596B21DDEF3A5009AC9CE /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		85D596B31DDEF3A5009AC9CE /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		85D596B51DDEF3D3009AC9CE /* homepageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homepageVC.h; sourceTree = "<group>"; };
+		85D596B61DDEF3D3009AC9CE /* homepageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homepageVC.m; sourceTree = "<group>"; };
+		85D596B81DDEF3EC009AC9CE /* programaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programaVC.h; sourceTree = "<group>"; };
+		85D596B91DDEF3EC009AC9CE /* programaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programaVC.m; sourceTree = "<group>"; };
+		85D596BB1DDEF409009AC9CE /* liveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liveVC.h; sourceTree = "<group>"; };
+		85D596BC1DDEF409009AC9CE /* liveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liveVC.m; sourceTree = "<group>"; };
+		85D596BE1DDEF423009AC9CE /* MyHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHomeVC.h; sourceTree = "<group>"; };
+		85D596BF1DDEF423009AC9CE /* MyHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHomeVC.m; sourceTree = "<group>"; };
+		85D596C41DDF04BB009AC9CE /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		B00C938F55D556E01B4DB968 /* Pods-AllpeopleTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.debug.xcconfig"; sourceTree = "<group>"; };
 		ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AllpeopleTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,11 +113,13 @@
 			children = (
 				85D5966A1DDEE879009AC9CE /* AppDelegate.h */,
 				85D5966B1DDEE879009AC9CE /* AppDelegate.m */,
-				85D5966D1DDEE879009AC9CE /* ViewController.h */,
-				85D5966E1DDEE879009AC9CE /* ViewController.m */,
-				85D596701DDEE879009AC9CE /* Main.storyboard */,
-				85D596731DDEE87A009AC9CE /* Assets.xcassets */,
-				85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */,
+				85D596C31DDF04B2009AC9CE /* Define */,
+				85D596901DDEEF87009AC9CE /* Category */,
+				85D596911DDEEF87009AC9CE /* NetManager */,
+				85D596961DDEEF87009AC9CE /* Resource */,
+				85D596971DDEEF87009AC9CE /* Vendor */,
+				85D596AB1DDEF2FA009AC9CE /* Model */,
+				85D596AD1DDEF328009AC9CE /* ViewController */,
 				85D596671DDEE879009AC9CE /* Supporting Files */,
 			);
 			path = AllpeopleTV;
@@ -97,10 +128,116 @@
 		85D596671DDEE879009AC9CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				85D596781DDEE87A009AC9CE /* Info.plist */,
 				85D596681DDEE879009AC9CE /* main.m */,
+				85D5969A1DDEEF9C009AC9CE /* PrefixHeader.pch */,
+				85D596781DDEE87A009AC9CE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85D596901DDEEF87009AC9CE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				85D596A11DDEF0B4009AC9CE /* NSString+ZX_Method.h */,
+				85D596A21DDEF0B4009AC9CE /* NSString+ZX_Method.m */,
+				85D596A41DDEF0DC009AC9CE /* NSObject+Pares.h */,
+				85D596A51DDEF0DC009AC9CE /* NSObject+Pares.m */,
+				85D596A71DDEF0F0009AC9CE /* UIView+HUD.h */,
+				85D596A81DDEF0F0009AC9CE /* UIView+HUD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		85D596911DDEEF87009AC9CE /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				85D596921DDEEF87009AC9CE /* BaseNetManager.h */,
+				85D596931DDEEF87009AC9CE /* BaseNetManager.m */,
+				85D596941DDEEF87009AC9CE /* NetManager.h */,
+				85D596951DDEEF87009AC9CE /* NetManager.m */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		85D596961DDEEF87009AC9CE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				85D596701DDEE879009AC9CE /* Main.storyboard */,
+				85D596731DDEE87A009AC9CE /* Assets.xcassets */,
+				85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		85D596971DDEEF87009AC9CE /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		85D596AB1DDEF2FA009AC9CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85D596AD1DDEF328009AC9CE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				85D596AF1DDEF363009AC9CE /* 首页 */,
+				85D596AE1DDEF363009AC9CE /* 栏目 */,
+				85D596B11DDEF363009AC9CE /* 直播 */,
+				85D596B01DDEF363009AC9CE /* 我的 */,
+				85D596B21DDEF3A5009AC9CE /* TableViewController.h */,
+				85D596B31DDEF3A5009AC9CE /* TableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		85D596AE1DDEF363009AC9CE /* 栏目 */ = {
+			isa = PBXGroup;
+			children = (
+				85D596B81DDEF3EC009AC9CE /* programaVC.h */,
+				85D596B91DDEF3EC009AC9CE /* programaVC.m */,
+			);
+			path = "栏目";
+			sourceTree = "<group>";
+		};
+		85D596AF1DDEF363009AC9CE /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				85D596B51DDEF3D3009AC9CE /* homepageVC.h */,
+				85D596B61DDEF3D3009AC9CE /* homepageVC.m */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		85D596B01DDEF363009AC9CE /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				85D596BE1DDEF423009AC9CE /* MyHomeVC.h */,
+				85D596BF1DDEF423009AC9CE /* MyHomeVC.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		85D596B11DDEF363009AC9CE /* 直播 */ = {
+			isa = PBXGroup;
+			children = (
+				85D596BB1DDEF409009AC9CE /* liveVC.h */,
+				85D596BC1DDEF409009AC9CE /* liveVC.m */,
+			);
+			path = "直播";
+			sourceTree = "<group>";
+		};
+		85D596C31DDF04B2009AC9CE /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				85D596C41DDF04BB009AC9CE /* Constant.h */,
+			);
+			path = Define;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +362,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85D5966F1DDEE879009AC9CE /* ViewController.m in Sources */,
+				85D596BA1DDEF3EC009AC9CE /* programaVC.m in Sources */,
+				85D596B71DDEF3D3009AC9CE /* homepageVC.m in Sources */,
+				85D596A61DDEF0DC009AC9CE /* NSObject+Pares.m in Sources */,
+				85D596A31DDEF0B4009AC9CE /* NSString+ZX_Method.m in Sources */,
+				85D596981DDEEF87009AC9CE /* BaseNetManager.m in Sources */,
+				85D596991DDEEF87009AC9CE /* NetManager.m in Sources */,
+				85D596B41DDEF3A5009AC9CE /* TableViewController.m in Sources */,
+				85D596A91DDEF0F0009AC9CE /* UIView+HUD.m in Sources */,
+				85D596BD1DDEF409009AC9CE /* liveVC.m in Sources */,
+				85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
 				85D596691DDEE879009AC9CE /* main.m in Sources */,
 			);
@@ -240,6 +386,7 @@
 				85D596711DDEE879009AC9CE /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */ = {
@@ -248,6 +395,7 @@
 				85D596761DDEE87A009AC9CE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -346,7 +494,9 @@
 			baseConfigurationReference = B00C938F55D556E01B4DB968 /* Pods-AllpeopleTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AllpeopleTV/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZeXiDao.AllpeopleTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,7 +508,9 @@
 			baseConfigurationReference = 69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AllpeopleTV/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZeXiDao.AllpeopleTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
