@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85D596691DDEE879009AC9CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596681DDEE879009AC9CE /* main.m */; };
+		85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5966B1DDEE879009AC9CE /* AppDelegate.m */; };
+		85D5966F1DDEE879009AC9CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5966E1DDEE879009AC9CE /* ViewController.m */; };
+		85D596721DDEE879009AC9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596701DDEE879009AC9CE /* Main.storyboard */; };
+		85D596741DDEE87A009AC9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D596731DDEE87A009AC9CE /* Assets.xcassets */; };
+		85D596771DDEE87A009AC9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */; };
+		85D5968F1DDEEC86009AC9CE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5968E1DDEEC86009AC9CE /* TableViewController.m */; };
+		E9CC77EC67BB1E3DE2FDEB9A /* libPods-AllpeopleTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.release.xcconfig"; sourceTree = "<group>"; };
+		85D596641DDEE879009AC9CE /* AllpeopleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllpeopleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D596681DDEE879009AC9CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85D5966A1DDEE879009AC9CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85D5966B1DDEE879009AC9CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85D5966D1DDEE879009AC9CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		85D5966E1DDEE879009AC9CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85D596711DDEE879009AC9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85D596731DDEE87A009AC9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85D596761DDEE87A009AC9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85D596781DDEE87A009AC9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85D5968D1DDEEC86009AC9CE /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		85D5968E1DDEEC86009AC9CE /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B00C938F55D556E01B4DB968 /* Pods-AllpeopleTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.debug.xcconfig"; sourceTree = "<group>"; };
+		ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AllpeopleTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85D596611DDEE879009AC9CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CC77EC67BB1E3DE2FDEB9A /* libPods-AllpeopleTV.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D2081448DEBDC97CF73592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DEA22B71F7DB8AAAC9BF031 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B00C938F55D556E01B4DB968 /* Pods-AllpeopleTV.debug.xcconfig */,
+				69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85D5965B1DDEE879009AC9CE = {
+			isa = PBXGroup;
+			children = (
+				85D596661DDEE879009AC9CE /* AllpeopleTV */,
+				85D596651DDEE879009AC9CE /* Products */,
+				3DEA22B71F7DB8AAAC9BF031 /* Pods */,
+				01D2081448DEBDC97CF73592 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85D596651DDEE879009AC9CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85D596641DDEE879009AC9CE /* AllpeopleTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85D596661DDEE879009AC9CE /* AllpeopleTV */ = {
+			isa = PBXGroup;
+			children = (
+				85D5966A1DDEE879009AC9CE /* AppDelegate.h */,
+				85D5966B1DDEE879009AC9CE /* AppDelegate.m */,
+				85D5966D1DDEE879009AC9CE /* ViewController.h */,
+				85D5966E1DDEE879009AC9CE /* ViewController.m */,
+				85D5968C1DDEEC62009AC9CE /* Model */,
+				85D596701DDEE879009AC9CE /* Main.storyboard */,
+				85D596731DDEE87A009AC9CE /* Assets.xcassets */,
+				85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */,
+				85D596671DDEE879009AC9CE /* Supporting Files */,
+			);
+			path = AllpeopleTV;
+			sourceTree = "<group>";
+		};
+		85D596671DDEE879009AC9CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85D596781DDEE87A009AC9CE /* Info.plist */,
+				85D596681DDEE879009AC9CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85D5968C1DDEEC62009AC9CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85D5968D1DDEEC86009AC9CE /* TableViewController.h */,
+				85D5968E1DDEEC86009AC9CE /* TableViewController.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85D596631DDEE879009AC9CE /* AllpeopleTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D5967B1DDEE87A009AC9CE /* Build configuration list for PBXNativeTarget "AllpeopleTV" */;
+			buildPhases = (
+				3DD86C6FE64416F9A0201D24 /* [CP] Check Pods Manifest.lock */,
+				85D596601DDEE879009AC9CE /* Sources */,
+				85D596611DDEE879009AC9CE /* Frameworks */,
+				85D596621DDEE879009AC9CE /* Resources */,
+				39C1480EC627131A40A217ED /* [CP] Embed Pods Frameworks */,
+				0B2F49EC6607838034573405 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AllpeopleTV;
+			productName = AllpeopleTV;
+			productReference = 85D596641DDEE879009AC9CE /* AllpeopleTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85D5965C1DDEE879009AC9CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Zx;
+				TargetAttributes = {
+					85D596631DDEE879009AC9CE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 85D5965F1DDEE879009AC9CE /* Build configuration list for PBXProject "AllpeopleTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85D5965B1DDEE879009AC9CE;
+			productRefGroup = 85D596651DDEE879009AC9CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85D596631DDEE879009AC9CE /* AllpeopleTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85D596621DDEE879009AC9CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D596771DDEE87A009AC9CE /* LaunchScreen.storyboard in Resources */,
+				85D596741DDEE87A009AC9CE /* Assets.xcassets in Resources */,
+				85D596721DDEE879009AC9CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B2F49EC6607838034573405 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39C1480EC627131A40A217ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DD86C6FE64416F9A0201D24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85D596601DDEE879009AC9CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D5966F1DDEE879009AC9CE /* ViewController.m in Sources */,
+				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
+				85D596691DDEE879009AC9CE /* main.m in Sources */,
+				85D5968F1DDEEC86009AC9CE /* TableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85D596701DDEE879009AC9CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85D596711DDEE879009AC9CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85D596761DDEE87A009AC9CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85D596791DDEE87A009AC9CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85D5967A1DDEE87A009AC9CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85D5967C1DDEE87A009AC9CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B00C938F55D556E01B4DB968 /* Pods-AllpeopleTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AllpeopleTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZeXiDao.AllpeopleTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85D5967D1DDEE87A009AC9CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AllpeopleTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZeXiDao.AllpeopleTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85D5965F1DDEE879009AC9CE /* Build configuration list for PBXProject "AllpeopleTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D596791DDEE87A009AC9CE /* Debug */,
+				85D5967A1DDEE87A009AC9CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D5967B1DDEE87A009AC9CE /* Build configuration list for PBXNativeTarget "AllpeopleTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D5967C1DDEE87A009AC9CE /* Debug */,
+				85D5967D1DDEE87A009AC9CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85D5965C1DDEE879009AC9CE /* Project object */;
+}
