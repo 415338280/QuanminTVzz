@@ -13,7 +13,6 @@
 		85D596721DDEE879009AC9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596701DDEE879009AC9CE /* Main.storyboard */; };
 		85D596741DDEE87A009AC9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D596731DDEE87A009AC9CE /* Assets.xcassets */; };
 		85D596771DDEE87A009AC9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */; };
-		85D5968F1DDEEC86009AC9CE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5968E1DDEEC86009AC9CE /* TableViewController.m */; };
 		E9CC77EC67BB1E3DE2FDEB9A /* libPods-AllpeopleTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +28,6 @@
 		85D596731DDEE87A009AC9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85D596761DDEE87A009AC9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85D596781DDEE87A009AC9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85D5968D1DDEEC86009AC9CE /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		85D5968E1DDEEC86009AC9CE /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B00C938F55D556E01B4DB968 /* Pods-AllpeopleTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.debug.xcconfig"; sourceTree = "<group>"; };
 		ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AllpeopleTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,7 +86,6 @@
 				85D5966B1DDEE879009AC9CE /* AppDelegate.m */,
 				85D5966D1DDEE879009AC9CE /* ViewController.h */,
 				85D5966E1DDEE879009AC9CE /* ViewController.m */,
-				85D5968C1DDEEC62009AC9CE /* Model */,
 				85D596701DDEE879009AC9CE /* Main.storyboard */,
 				85D596731DDEE87A009AC9CE /* Assets.xcassets */,
 				85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */,
@@ -105,15 +101,6 @@
 				85D596681DDEE879009AC9CE /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		85D5968C1DDEEC62009AC9CE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				85D5968D1DDEEC86009AC9CE /* TableViewController.h */,
-				85D5968E1DDEEC86009AC9CE /* TableViewController.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +228,6 @@
 				85D5966F1DDEE879009AC9CE /* ViewController.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
 				85D596691DDEE879009AC9CE /* main.m in Sources */,
-				85D5968F1DDEEC86009AC9CE /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
