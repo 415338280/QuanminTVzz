@@ -10,9 +10,14 @@
 
 @implementation NSObject (Pares)
 
-+(id)pares:(id)JSON
-{
-    return nil;
++ (id)parse:(id)JSON{
+    if ([JSON isKindOfClass:[NSDictionary class]]) {
+        return [self modelWithJSON:JSON];
+    }
+    if ([JSON isKindOfClass:[NSArray class]]) {
+        return [NSArray modelArrayWithClass:self.class json:JSON];
+    }
+    return JSON;
 }
 
 @end

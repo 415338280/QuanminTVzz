@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseNetManager.h"
-typedef void(^Myblock)(NSArray<liveModel*>* model,NSError* error);
+typedef void(^Myblock)(id * model,NSError* error);
 
 
 @interface NetManager : BaseNetManager
-+getLiveModelWithPage:(NSString*)page CompletionHandeler:(Myblock)completionHandeler;
++getLiveModelWithPage:(NSInteger)page CompletionHandeler:(void(^)(liveModel* model,NSError* error))completionHandeler;
 
 @end
 

@@ -10,6 +10,6 @@
 
 @interface NSObject (Pares)<YYModel>
 
-+(id)pares:(id)JSON;
++ (id)parse:(id)JSON;
 
 @end

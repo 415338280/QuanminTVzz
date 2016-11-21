@@ -22,6 +22,8 @@
         _thumb = [UIImageView new];
         [self.contentView addSubview:_thumb];
         [_thumb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(574);
+            make.height.equalTo(340);
             make.edges.equalTo(UIEdgeInsetsMake(0, 0, 133, 0));
         }];
     }

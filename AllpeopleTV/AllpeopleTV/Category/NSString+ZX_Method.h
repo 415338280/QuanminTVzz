@@ -10,4 +10,5 @@
 
 @interface NSString (ZX_Method)
 -(NSURL*)ZX_URL;
+
 @end

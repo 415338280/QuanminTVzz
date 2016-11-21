@@ -22,3 +22,17 @@
 
 
 @end
+
+@implementation  liverecommendModel
+
++(NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass
+{
+    return @{@"data":@"livedataModel"};
+}
+
+@end
+@implementation liverecommenddataModel
+
+
+
+@end

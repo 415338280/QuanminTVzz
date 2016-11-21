@@ -9,61 +9,50 @@
 #import "liveVC.h"
 
 @interface liveVC ()
-@property(nonatomic)NSArray<liveModel*> *datalist;
-@property(nonatomic)UICollectionViewFlowLayout* layou;
-@property(nonatomic)NSMutableArray<liveModel*>* addData;
-
+//@property(nonatomic)liveModel *datalist;
+@property(nonatomic)NSMutableArray<livedataModel*>* addData;
+@property(nonatomic)NSInteger page;
 @end
 @implementation liveVC
--(NSArray<liveModel *> *)datalist
-{
-    if (!_datalist) {
-        _datalist = [NSArray new];
-    }
-    return _datalist;
-}
--(NSMutableArray<liveModel *> *)addData
+//-(NSArray<liveModel *> *)datalist
+//{
+//    if (!_datalist) {
+//        _datalist = [NSArray new];
+//    }
+//    return _datalist;
+//}
+-(NSMutableArray<livedataModel *> *)addData
 {
     if (!_addData) {
         _addData = [NSMutableArray array];
     }
     return _addData;
 }
--(UICollectionViewLayout *)layou
-{
-    if (!_layou) {
-        _layou = [[UICollectionViewFlowLayout alloc]init];
-        _layou.sectionInset = UIEdgeInsetsMake(25, 25, 25, 25);
-        _layou.minimumLineSpacing = 25;
-        _layou.minimumInteritemSpacing = 45;
-        CGFloat width = (long)(([UIScreen mainScreen].bounds.size.width - 75)/ 2 );
-        _layou.itemSize = CGSizeMake(width, 465);
-    }
-    return _layou;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[liveTVCell class] forCellWithReuseIdentifier:@"liveTVCell"];
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-       [NetManager getLiveModelWithPage:@"" CompletionHandeler:^(NSArray<liveModel *> *model, NSError *error) {
-           if (!error) {
-               self.datalist = model;
-               [self.addData removeAllObjects];
-               [self.addData addObjectsFromArray:model];
-               [self.collectionView reloadData];
-               [self.collectionView.mj_header endRefreshing];
-           }
-       }];
+          [NetManager getLiveModelWithPage:0 CompletionHandeler:^(liveModel *model, NSError *error) {
+//              self.datalist = model;
+              [self.addData removeAllObjects];
+//              [self.addData addObject:model.data];
+              [self.addData addObjectsFromArray:model.data];
+              [self.collectionView reloadData];
+              [self.collectionView.mj_header endRefreshing];
+              self.page = 0;
+          }];
     }];
     [self.collectionView.mj_header beginRefreshing];
-    
+//    
     self.collectionView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        [NetManager getLiveModelWithPage:@"" CompletionHandeler:^(NSArray<liveModel *> *model, NSError *error) {
+        [NetManager getLiveModelWithPage:self.page + 1 CompletionHandeler:^(liveModel *model, NSError *error) {
+            [self.collectionView.mj_footer endRefreshing];
             if (!error) {
-                [self.addData addObjectsFromArray:model];
+                [self.addData addObjectsFromArray:model.data];
                 [self.collectionView reloadData];
-                [self.collectionView.mj_header endRefreshing];
+                self.page++;
             }
         }];
     }];
@@ -85,9 +74,15 @@
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    
-    
-    return nil;
+    livedataModel* model = self.addData[indexPath.row];
+    liveTVCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"liveTVCell" forIndexPath:indexPath];
+    [cell.avatar setImageURL:model.avatar.ZX_URL];
+    [cell.thumb setImageURL:model.thumb.ZX_URL];
+    cell.title.text = model.title;
+    cell.nick.text = model.nick;
+    cell.view.text = model.view;
+
+    return cell;
 }
 
 

@@ -19,9 +19,20 @@
 @end
 
 @implementation TableViewController
+-(UICollectionViewLayout *)getlayou
+{
+       UICollectionViewFlowLayout *layou = [[UICollectionViewFlowLayout alloc]init];
+        layou.sectionInset = UIEdgeInsetsMake(25, 25, 25, 25);
+        layou.minimumLineSpacing = 25;
+        layou.minimumInteritemSpacing = 45;
+        CGFloat width = (long)(([UIScreen mainScreen].bounds.size.width - 75) / 2 );
+        layou.itemSize = CGSizeMake(width,465);
+    return layou;
+}
 -(homepageVC *)homeVC
 {
     if (!_homeVC) {
+        _homeVC = [homepageVC new];
         _homeVC.title = @"首页";
         _homeVC.tabBarItem.image = [UIImage imageNamed:@"btn_tabbar_home_normal_25x25_"];
         _homeVC.tabBarItem.selectedImage = [UIImage imageNamed:@"btn_tabbar_home_selected_25x25_"];
@@ -41,7 +52,7 @@
 -(liveVC *)liveVC
 {
     if (!_liveVC) {
-        _liveVC = [liveVC new];
+        _liveVC = [[liveVC alloc]initWithCollectionViewLayout:[self getlayou]];
         _liveVC.title = @"直播";
         _liveVC.tabBarItem.image = [UIImage imageNamed:@"btn_tabbar_wode_normal_25x25_"];
         _liveVC.tabBarItem.selectedImage = [UIImage imageNamed:@"btn_tabbar_wode_selected_25x25_"];

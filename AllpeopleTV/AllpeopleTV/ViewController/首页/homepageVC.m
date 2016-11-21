@@ -16,13 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-   // [self.tableView registerClass:[UITableView class] forCellReuseIdentifier:@"call"];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.tableView.backgroundColor = [UIColor whiteColor];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,7 +42,6 @@
     UITableViewCell *cell = [UITableViewCell new];
     cell.backgroundColor = [UIColor yellowColor];
     
-    // Configure the cell...
     
     return cell;
 }
