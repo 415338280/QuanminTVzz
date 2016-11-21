@@ -28,6 +28,7 @@
 #import "NSString+ZX_Method.h"
 #import "NSObject+Pares.h"
 #import "UIView+HUD.h"
+#import "UIScrollView+Refresh.h"
 
 // 常量
 #import "Constant.h"
@@ -40,10 +41,14 @@
 // tabbar
 #import "TableViewController.h"
 // 直播页面
+#import "LiveLayout.h"
 #import "liveModel.h"
 #import "liveVC.h"
 #import "liveTVCell.h"
 #import "liveTVCell.h"
+//栏目页面数据
+#import "programaModel.h"
+#import "programaVC.h"
 //网络获取类
 #import "NetManager.h"
 #endif /* PrefixHeader_pch */

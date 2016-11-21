@@ -13,7 +13,8 @@ typedef void(^Myblock)(id * model,NSError* error);
 
 @interface NetManager : BaseNetManager
 +getLiveModelWithPage:(NSInteger)page CompletionHandeler:(void(^)(liveModel* model,NSError* error))completionHandeler;
-
++getProgramaModelCompletionHandeler:(void(^)(programaModel* Model,NSError* error))completionHandeler;
++getLiveTVModelWithslug:(NSString*)slug WithPage:(NSInteger)page completionHandeler:(void(^)(liveModel* model,NSError* error))completionHandeler;
 @end
 
 

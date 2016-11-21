@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		858A07441DE2963F00201462 /* programaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07431DE2963F00201462 /* programaModel.m */; };
+		858A07481DE29B5800201462 /* programacell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07471DE29B5800201462 /* programacell.m */; };
+		858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A074B1DE2CCF600201462 /* UIScrollView+Refresh.m */; };
+		858A07521DE3155600201462 /* LiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07511DE3155600201462 /* LiveController.m */; };
+		858A07591DE31B9D00201462 /* LiveLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07581DE31B9D00201462 /* LiveLayout.m */; };
 		85D596691DDEE879009AC9CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596681DDEE879009AC9CE /* main.m */; };
 		85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5966B1DDEE879009AC9CE /* AppDelegate.m */; };
 		85D596721DDEE879009AC9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596701DDEE879009AC9CE /* Main.storyboard */; };
@@ -30,6 +35,16 @@
 
 /* Begin PBXFileReference section */
 		69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.release.xcconfig"; sourceTree = "<group>"; };
+		858A07421DE2963F00201462 /* programaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programaModel.h; sourceTree = "<group>"; };
+		858A07431DE2963F00201462 /* programaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programaModel.m; sourceTree = "<group>"; };
+		858A07461DE29B5800201462 /* programacell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programacell.h; sourceTree = "<group>"; };
+		858A07471DE29B5800201462 /* programacell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programacell.m; sourceTree = "<group>"; };
+		858A074A1DE2CCF600201462 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		858A074B1DE2CCF600201462 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		858A07501DE3155600201462 /* LiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveController.h; sourceTree = "<group>"; };
+		858A07511DE3155600201462 /* LiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveController.m; sourceTree = "<group>"; };
+		858A07571DE31B9D00201462 /* LiveLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLayout.h; sourceTree = "<group>"; };
+		858A07581DE31B9D00201462 /* LiveLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLayout.m; sourceTree = "<group>"; };
 		85D596641DDEE879009AC9CE /* AllpeopleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllpeopleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D596681DDEE879009AC9CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85D5966A1DDEE879009AC9CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +114,67 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		858A07411DE2960500201462 /* 栏目Model */ = {
+			isa = PBXGroup;
+			children = (
+				858A07421DE2963F00201462 /* programaModel.h */,
+				858A07431DE2963F00201462 /* programaModel.m */,
+			);
+			name = "栏目Model";
+			sourceTree = "<group>";
+		};
+		858A07451DE29B2F00201462 /* 栏目Cell */ = {
+			isa = PBXGroup;
+			children = (
+				858A07461DE29B5800201462 /* programacell.h */,
+				858A07471DE29B5800201462 /* programacell.m */,
+			);
+			name = "栏目Cell";
+			sourceTree = "<group>";
+		};
+		858A07491DE2C60700201462 /* 直播Cell */ = {
+			isa = PBXGroup;
+			children = (
+				85DFFA7A1DDF365600EAEE95 /* liveTVCell.h */,
+				85DFFA7B1DDF365600EAEE95 /* liveTVCell.m */,
+			);
+			name = "直播Cell";
+			sourceTree = "<group>";
+		};
+		858A074D1DE3143C00201462 /* 栏目二级Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "栏目二级Cell";
+			sourceTree = "<group>";
+		};
+		858A074E1DE3146100201462 /* 栏目一级VC */ = {
+			isa = PBXGroup;
+			children = (
+				85D596B81DDEF3EC009AC9CE /* programaVC.h */,
+				85D596B91DDEF3EC009AC9CE /* programaVC.m */,
+			);
+			name = "栏目一级VC";
+			sourceTree = "<group>";
+		};
+		858A074F1DE3146F00201462 /* 栏目二级VC */ = {
+			isa = PBXGroup;
+			children = (
+				858A07501DE3155600201462 /* LiveController.h */,
+				858A07511DE3155600201462 /* LiveController.m */,
+			);
+			name = "栏目二级VC";
+			sourceTree = "<group>";
+		};
+		858A07561DE31B7E00201462 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				858A07571DE31B9D00201462 /* LiveLayout.h */,
+				858A07581DE31B9D00201462 /* LiveLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
 		85D5965B1DDEE879009AC9CE = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +229,8 @@
 				85D596A51DDEF0DC009AC9CE /* NSObject+Pares.m */,
 				85D596A71DDEF0F0009AC9CE /* UIView+HUD.h */,
 				85D596A81DDEF0F0009AC9CE /* UIView+HUD.m */,
+				858A074A1DE2CCF600201462 /* UIScrollView+Refresh.h */,
+				858A074B1DE2CCF600201462 /* UIScrollView+Refresh.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -188,6 +266,7 @@
 		85D596AB1DDEF2FA009AC9CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				858A07411DE2960500201462 /* 栏目Model */,
 				85DFFA731DDF2C2900EAEE95 /* 直播Model */,
 			);
 			path = Model;
@@ -196,12 +275,13 @@
 		85D596AD1DDEF328009AC9CE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				858A07561DE31B7E00201462 /* Layout */,
+				85D596B21DDEF3A5009AC9CE /* TableViewController.h */,
+				85D596B31DDEF3A5009AC9CE /* TableViewController.m */,
 				85D596AF1DDEF363009AC9CE /* 首页 */,
 				85D596AE1DDEF363009AC9CE /* 栏目 */,
 				85D596B11DDEF363009AC9CE /* 直播 */,
 				85D596B01DDEF363009AC9CE /* 我的 */,
-				85D596B21DDEF3A5009AC9CE /* TableViewController.h */,
-				85D596B31DDEF3A5009AC9CE /* TableViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -209,8 +289,10 @@
 		85D596AE1DDEF363009AC9CE /* 栏目 */ = {
 			isa = PBXGroup;
 			children = (
-				85D596B81DDEF3EC009AC9CE /* programaVC.h */,
-				85D596B91DDEF3EC009AC9CE /* programaVC.m */,
+				858A074F1DE3146F00201462 /* 栏目二级VC */,
+				858A074E1DE3146100201462 /* 栏目一级VC */,
+				858A074D1DE3143C00201462 /* 栏目二级Cell */,
+				858A07451DE29B2F00201462 /* 栏目Cell */,
 			);
 			path = "栏目";
 			sourceTree = "<group>";
@@ -238,8 +320,7 @@
 			children = (
 				85D596BB1DDEF409009AC9CE /* liveVC.h */,
 				85D596BC1DDEF409009AC9CE /* liveVC.m */,
-				85DFFA7A1DDF365600EAEE95 /* liveTVCell.h */,
-				85DFFA7B1DDF365600EAEE95 /* liveTVCell.m */,
+				858A07491DE2C60700201462 /* 直播Cell */,
 				85DFFA7D1DDF3BA200EAEE95 /* llvelayout.h */,
 				85DFFA7E1DDF3BA200EAEE95 /* llvelayout.m */,
 			);
@@ -389,15 +470,20 @@
 				85D596B71DDEF3D3009AC9CE /* homepageVC.m in Sources */,
 				85D596A61DDEF0DC009AC9CE /* NSObject+Pares.m in Sources */,
 				85D596A31DDEF0B4009AC9CE /* NSString+ZX_Method.m in Sources */,
+				858A07441DE2963F00201462 /* programaModel.m in Sources */,
 				85DFFA7F1DDF3BA200EAEE95 /* llvelayout.m in Sources */,
 				85D596981DDEEF87009AC9CE /* BaseNetManager.m in Sources */,
 				85DFFA761DDF2C5A00EAEE95 /* liveModel.m in Sources */,
+				858A07521DE3155600201462 /* LiveController.m in Sources */,
 				85D596991DDEEF87009AC9CE /* NetManager.m in Sources */,
 				85D596B41DDEF3A5009AC9CE /* TableViewController.m in Sources */,
 				85D596A91DDEF0F0009AC9CE /* UIView+HUD.m in Sources */,
 				85D596BD1DDEF409009AC9CE /* liveVC.m in Sources */,
+				858A07481DE29B5800201462 /* programacell.m in Sources */,
+				858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */,
 				85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
+				858A07591DE31B9D00201462 /* LiveLayout.m in Sources */,
 				85D596691DDEE879009AC9CE /* main.m in Sources */,
 				85DFFA7C1DDF365600EAEE95 /* liveTVCell.m in Sources */,
 			);

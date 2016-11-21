@@ -35,9 +35,9 @@
     [self.collectionView registerClass:[liveTVCell class] forCellWithReuseIdentifier:@"liveTVCell"];
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
           [NetManager getLiveModelWithPage:0 CompletionHandeler:^(liveModel *model, NSError *error) {
-//              self.datalist = model;
+
               [self.addData removeAllObjects];
-//              [self.addData addObject:model.data];
+
               [self.addData addObjectsFromArray:model.data];
               [self.collectionView reloadData];
               [self.collectionView.mj_header endRefreshing];
@@ -76,11 +76,26 @@
     
     livedataModel* model = self.addData[indexPath.row];
     liveTVCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"liveTVCell" forIndexPath:indexPath];
+     [cell.thumb setImageURL:model.thumb.ZX_URL];
     [cell.avatar setImageURL:model.avatar.ZX_URL];
-    [cell.thumb setImageURL:model.thumb.ZX_URL];
     cell.title.text = model.title;
     cell.nick.text = model.nick;
-    cell.view.text = model.view;
+//    cell.view.text = model.view;
+    int num = model.view.intValue;
+    NSString* follow = model.view;
+    if (num >= 10000) {
+        follow = [NSString stringWithFormat:@"%.1f万", num / 10000.0];
+    }
+    follow = [NSString stringWithFormat:@" %@ ", follow];
+    NSAttributedString* str1 = [[NSAttributedString alloc]initWithString:follow attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName: [UIFont systemFontOfSize:13]}];
+    NSTextAttachment* ima = [NSTextAttachment new];
+    ima.image = [UIImage imageNamed:@"player_audienceCount_icon"];
+    ima.bounds = CGRectMake(4, -2, 12, 12);
+    NSAttributedString* str2 = [NSAttributedString attributedStringWithAttachment:ima];
+    NSMutableAttributedString* str = [NSMutableAttributedString new];
+    [str appendAttributedString: str1];
+    [str appendAttributedString: str2];
+    cell.view.attributedText = str;
 
     return cell;
 }

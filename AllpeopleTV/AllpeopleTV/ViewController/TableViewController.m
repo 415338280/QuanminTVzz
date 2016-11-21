@@ -22,11 +22,12 @@
 -(UICollectionViewLayout *)getlayou
 {
        UICollectionViewFlowLayout *layou = [[UICollectionViewFlowLayout alloc]init];
-        layou.sectionInset = UIEdgeInsetsMake(25, 25, 25, 25);
-        layou.minimumLineSpacing = 25;
-        layou.minimumInteritemSpacing = 45;
-        CGFloat width = (long)(([UIScreen mainScreen].bounds.size.width - 75) / 2 );
-        layou.itemSize = CGSizeMake(width,465);
+        layou.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+        layou.minimumLineSpacing = 10;
+        layou.minimumInteritemSpacing = 5;
+        CGFloat width = (long)(([UIScreen mainScreen].bounds.size.width - 25) / 2 );
+    CGFloat higt = width * 40 / 57 + 30;
+        layou.itemSize = CGSizeMake(width,higt);
     return layou;
 }
 -(homepageVC *)homeVC

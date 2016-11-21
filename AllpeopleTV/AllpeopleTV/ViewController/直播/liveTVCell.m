@@ -22,10 +22,21 @@
         _thumb = [UIImageView new];
         [self.contentView addSubview:_thumb];
         [_thumb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.equalTo(574);
-            make.height.equalTo(340);
-            make.edges.equalTo(UIEdgeInsetsMake(0, 0, 133, 0));
+            make.left.top.right.equalTo(0);
+            make.bottom.equalTo(-45);
         }];
+        //图片填充样式
+        _thumb.contentMode = UIStackViewAlignmentFill;
+        // 剪切掉阴影部分
+//        _thumb.clipsToBounds = YES;
+        //  按圆形切割因为半径不够所以看出来效果只是四个角变了 半径为5
+        _thumb.layer.cornerRadius = 5;
+        // 边缘线宽
+        _thumb.layer.borderWidth = 2;
+        // 边缘线的颜色
+        _thumb.layer.borderColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1].CGColor;
+        // 剪切阴影
+        _thumb.layer.masksToBounds = YES;
     }
     return _thumb;
 }
@@ -34,13 +45,12 @@
     if (!_avatar) {
         _avatar = [UIImageView new];
         [self.contentView addSubview:_avatar];
-        
         [_avatar mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(0);
-            make.top.equalTo(self.thumb.mas_bottom).offset(27);
-            make.width.height.equalTo(100);
+            make.left.equalTo(5);
+            make.top.equalTo(self.thumb.mas_bottom).offset(5);
+            make.width.height.equalTo(36);
         }];
-        _avatar.layer.cornerRadius = _avatar.size.height;
+        _avatar.layer.cornerRadius = 18;
         _avatar.layer.masksToBounds = YES;
     }
     return _avatar;
@@ -54,8 +64,11 @@
             // 图片变园后可能布局出错
             make.left.equalTo(self.avatar.mas_right).offset(5);
        //     make.left.equalTo(115);
-            make.top.equalTo(self.thumb.mas_bottom).offset(32);
+            make.top.equalTo(self.thumb.mas_bottom).offset(7);
+            make.right.equalTo(0);
+            make.height.equalTo(15);
         }];
+        _nick.font = [UIFont systemFontOfSize:14];
     }
     return _nick;
 }
@@ -64,11 +77,13 @@
     if (!_title) {
         _title = [UILabel new];
         [self.contentView addSubview:_title];
-        _title.font = [UIFont systemFontOfSize:13];
-        _title.textColor = [UIColor grayColor];
+        _title.font = [UIFont systemFontOfSize:12];
+        _title.textColor = [UIColor lightGrayColor];
         [_title mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.nick);
-            make.top.equalTo(self.nick.mas_bottom).offset(14);
+            make.top.equalTo(self.nick.mas_bottom).offset(3);
+            make.right.equalTo(0);
+            make.height.equalTo(15);
         }];
     }
     return _title;
@@ -77,14 +92,14 @@
 {
     if (!_view) {
         _view = [UILabel new];
-        [self.contentView addSubview:_view];
+        [self.thumb addSubview:_view];
         _view.textColor = [UIColor whiteColor];
         _view.backgroundColor = [UIColor blackColor];
         _view.alpha = 0.5;
         [_view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(10);
             make.bottom.equalTo(-10);
-            make.width.equalTo(48);
+            make.width.equalTo(20);
         }];
     }
     return _view;
