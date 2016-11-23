@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852F39421DE57A65004F5B92 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852F39411DE57A65004F5B92 /* Storyboard.storyboard */; };
+		852F39441DE57A6C004F5B92 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */; };
+		852F39461DE57A95004F5B92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852F39451DE57A95004F5B92 /* Images.xcassets */; };
 		858A07441DE2963F00201462 /* programaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07431DE2963F00201462 /* programaModel.m */; };
 		858A07481DE29B5800201462 /* programacell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07471DE29B5800201462 /* programacell.m */; };
 		858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A074B1DE2CCF600201462 /* UIScrollView+Refresh.m */; };
@@ -14,9 +17,6 @@
 		858A07591DE31B9D00201462 /* LiveLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07581DE31B9D00201462 /* LiveLayout.m */; };
 		85D596691DDEE879009AC9CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596681DDEE879009AC9CE /* main.m */; };
 		85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5966B1DDEE879009AC9CE /* AppDelegate.m */; };
-		85D596721DDEE879009AC9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596701DDEE879009AC9CE /* Main.storyboard */; };
-		85D596741DDEE87A009AC9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D596731DDEE87A009AC9CE /* Assets.xcassets */; };
-		85D596771DDEE87A009AC9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */; };
 		85D596981DDEEF87009AC9CE /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596931DDEEF87009AC9CE /* BaseNetManager.m */; };
 		85D596991DDEEF87009AC9CE /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596951DDEEF87009AC9CE /* NetManager.m */; };
 		85D596A31DDEF0B4009AC9CE /* NSString+ZX_Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596A21DDEF0B4009AC9CE /* NSString+ZX_Method.m */; };
@@ -35,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.release.xcconfig"; sourceTree = "<group>"; };
+		852F39411DE57A65004F5B92 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		852F39451DE57A95004F5B92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../AllpeopleTV/Images.xcassets; sourceTree = "<group>"; };
 		858A07421DE2963F00201462 /* programaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programaModel.h; sourceTree = "<group>"; };
 		858A07431DE2963F00201462 /* programaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programaModel.m; sourceTree = "<group>"; };
 		858A07461DE29B5800201462 /* programacell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programacell.h; sourceTree = "<group>"; };
@@ -49,9 +52,6 @@
 		85D596681DDEE879009AC9CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85D5966A1DDEE879009AC9CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85D5966B1DDEE879009AC9CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		85D596711DDEE879009AC9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		85D596731DDEE87A009AC9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		85D596761DDEE87A009AC9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85D596781DDEE87A009AC9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D596921DDEEF87009AC9CE /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
 		85D596931DDEEF87009AC9CE /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
@@ -112,6 +112,17 @@
 				69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		852F39401DE57A4B004F5B92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				852F39411DE57A65004F5B92 /* Storyboard.storyboard */,
+				852F39451DE57A95004F5B92 /* Images.xcassets */,
+				852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */,
+			);
+			name = Resources;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 		858A07411DE2960500201462 /* 栏目Model */ = {
@@ -201,7 +212,7 @@
 				85D596C31DDF04B2009AC9CE /* Define */,
 				85D596901DDEEF87009AC9CE /* Category */,
 				85D596911DDEEF87009AC9CE /* NetManager */,
-				85D596961DDEEF87009AC9CE /* Resource */,
+				852F39401DE57A4B004F5B92 /* Resources */,
 				85D596971DDEEF87009AC9CE /* Vendor */,
 				85D596AB1DDEF2FA009AC9CE /* Model */,
 				85D596AD1DDEF328009AC9CE /* ViewController */,
@@ -244,16 +255,6 @@
 				85D596951DDEEF87009AC9CE /* NetManager.m */,
 			);
 			path = NetManager;
-			sourceTree = "<group>";
-		};
-		85D596961DDEEF87009AC9CE /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				85D596701DDEE879009AC9CE /* Main.storyboard */,
-				85D596731DDEE87A009AC9CE /* Assets.xcassets */,
-				85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		85D596971DDEEF87009AC9CE /* Vendor */ = {
@@ -405,9 +406,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85D596771DDEE87A009AC9CE /* LaunchScreen.storyboard in Resources */,
-				85D596741DDEE87A009AC9CE /* Assets.xcassets in Resources */,
-				85D596721DDEE879009AC9CE /* Main.storyboard in Resources */,
+				852F39461DE57A95004F5B92 /* Images.xcassets in Resources */,
+				852F39441DE57A6C004F5B92 /* Launch Screen.storyboard in Resources */,
+				852F39421DE57A65004F5B92 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,27 +491,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		85D596701DDEE879009AC9CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85D596711DDEE879009AC9CE /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		85D596751DDEE87A009AC9CE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85D596761DDEE87A009AC9CE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		85D596791DDEE87A009AC9CE /* Debug */ = {
@@ -606,6 +586,7 @@
 			baseConfigurationReference = B00C938F55D556E01B4DB968 /* Pods-AllpeopleTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AllpeopleTV/Info.plist;
 				INFOPLIST_PREFIX_HEADER = "";
@@ -620,6 +601,7 @@
 			baseConfigurationReference = 69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AllpeopleTV/Info.plist;
 				INFOPLIST_PREFIX_HEADER = "";
