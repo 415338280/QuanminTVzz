@@ -9,5 +9,16 @@
 #import "UIView+HUD.h"
 
 @implementation UIView (HUD)
-
+-(void)showHUD
+{
+    [self hideHUD];
+    MBProgressHUD*  hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
+    [hud hideAnimated:YES afterDelay:30];
+    hud.mode = MBProgressHUDModeCustomView;
+    
+}
+-(void)hideHUD
+{
+    [MBProgressHUD hideAllHUDsForView:self animated:YES];
+}
 @end
