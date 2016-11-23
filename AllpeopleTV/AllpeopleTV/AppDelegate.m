@@ -15,7 +15,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     [UITabBar appearance].translucent = NO;
+    
     [UINavigationBar appearance].translucent = NO;
     [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
         NSLog(@"");
@@ -25,6 +27,7 @@
     [self.window makeKeyAndVisible];
     
     _window.rootViewController = [TableViewController new];
+     
     return YES;
 }
 

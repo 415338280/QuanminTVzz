@@ -63,8 +63,11 @@
 -(MyHomeVC *)MyHomeVC
 {
     if (!_MyHomeVC) {
-        _MyHomeVC = [MyHomeVC new];
-        _MyHomeVC.view.backgroundColor = [UIColor yellowColor];
+      //  self.navigationController.hidesBarsOnTap = YES;
+        self.navigationController.hidesBarsWhenVerticallyCompact = YES;
+        UIStoryboard* sy = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+        _MyHomeVC = [sy instantiateViewControllerWithIdentifier:@"MyHomeVC"];
+       
         _MyHomeVC.title = @"我的";
         _MyHomeVC.tabBarItem.image = [UIImage imageNamed:@"btn_tabbar_zhibo_normal_25x25_"];
          _MyHomeVC.tabBarItem.selectedImage = [UIImage imageNamed:@"btn_tabbar_zhibo_selected_25x25_"];
@@ -78,7 +81,11 @@
     UINavigationController* navi0 = [[UINavigationController alloc]initWithRootViewController:self.homeVC];
     UINavigationController* navi1 = [[UINavigationController alloc]initWithRootViewController:self.programaVC];
     UINavigationController* navi2 = [[UINavigationController alloc]initWithRootViewController:self.liveVC];
-    UINavigationController* navi3 = [[UINavigationController alloc]initWithRootViewController:self.MyHomeVC];
+  //  UIStoryboard* sy = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+   // UINavigationController* navi3 = [sy instantiateViewControllerWithIdentifier:@"Nav"];
+   UINavigationController* navi3 = [[UINavigationController alloc]initWithRootViewController:self.MyHomeVC];
+   navi3.navigationController.hidesBarsOnTap = YES;
+    navi3.hidesBottomBarWhenPushed = YES;
     self.viewControllers = @[navi0, navi1, navi2, navi3];
     [[UITabBar appearance]setTintColor:[UIColor redColor]];
  

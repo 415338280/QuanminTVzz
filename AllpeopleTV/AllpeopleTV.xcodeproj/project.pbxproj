@@ -10,6 +10,7 @@
 		852F39421DE57A65004F5B92 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852F39411DE57A65004F5B92 /* Storyboard.storyboard */; };
 		852F39441DE57A6C004F5B92 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */; };
 		852F39461DE57A95004F5B92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852F39451DE57A95004F5B92 /* Images.xcassets */; };
+		852F39491DE57EA1004F5B92 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852F39481DE57EA1004F5B92 /* MyTableViewController.m */; };
 		858A07441DE2963F00201462 /* programaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07431DE2963F00201462 /* programaModel.m */; };
 		858A07481DE29B5800201462 /* programacell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07471DE29B5800201462 /* programacell.m */; };
 		858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A074B1DE2CCF600201462 /* UIScrollView+Refresh.m */; };
@@ -38,6 +39,8 @@
 		852F39411DE57A65004F5B92 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		852F39451DE57A95004F5B92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../AllpeopleTV/Images.xcassets; sourceTree = "<group>"; };
+		852F39471DE57EA1004F5B92 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		852F39481DE57EA1004F5B92 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		858A07421DE2963F00201462 /* programaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programaModel.h; sourceTree = "<group>"; };
 		858A07431DE2963F00201462 /* programaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programaModel.m; sourceTree = "<group>"; };
 		858A07461DE29B5800201462 /* programacell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programacell.h; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 			children = (
 				85D596BE1DDEF423009AC9CE /* MyHomeVC.h */,
 				85D596BF1DDEF423009AC9CE /* MyHomeVC.m */,
+				852F39471DE57EA1004F5B92 /* MyTableViewController.h */,
+				852F39481DE57EA1004F5B92 /* MyTableViewController.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 				85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
 				858A07591DE31B9D00201462 /* LiveLayout.m in Sources */,
+				852F39491DE57EA1004F5B92 /* MyTableViewController.m in Sources */,
 				85D596691DDEE879009AC9CE /* main.m in Sources */,
 				85DFFA7C1DDF365600EAEE95 /* liveTVCell.m in Sources */,
 			);
