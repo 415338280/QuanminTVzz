@@ -11,8 +11,10 @@
 
 #define KBeasPath @"http://www.quanmin.tv"
 #define kLivePath @"http://www.quanmin.tv/json/play/list_%ld.json"
+
 #define kLivePath0 @"http://www.quanmin.tv/json/play/list.json"
 
+#define kLiveroomPath @"http://www.quanmin.tv/json/rooms/%@/info.json"
 
 //栏目数据连接
 #define kProgramaPath @"http://www.quanmin.tv/json/categories/list.json"

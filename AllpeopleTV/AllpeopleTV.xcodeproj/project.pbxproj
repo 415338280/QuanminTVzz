@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		851ED3301DE6C83300C63AC7 /* LiveroomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED32F1DE6C83300C63AC7 /* LiveroomVC.m */; };
+		851ED3331DE6C88200C63AC7 /* LiveroomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED3321DE6C88200C63AC7 /* LiveroomCell.m */; };
+		851ED3361DE6C8B500C63AC7 /* LiveroomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED3351DE6C8B500C63AC7 /* LiveroomView.m */; };
+		851ED3391DE6D3C900C63AC7 /* liveRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED3381DE6D3C900C63AC7 /* liveRoomModel.m */; };
+		851ED33D1DE7140200C63AC7 /* registerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED33C1DE7140200C63AC7 /* registerVC.m */; };
 		852F39421DE57A65004F5B92 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852F39411DE57A65004F5B92 /* Storyboard.storyboard */; };
 		852F39441DE57A6C004F5B92 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */; };
 		852F39461DE57A95004F5B92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852F39451DE57A95004F5B92 /* Images.xcassets */; };
@@ -36,6 +41,16 @@
 
 /* Begin PBXFileReference section */
 		69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.release.xcconfig"; sourceTree = "<group>"; };
+		851ED32E1DE6C83300C63AC7 /* LiveroomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveroomVC.h; sourceTree = "<group>"; };
+		851ED32F1DE6C83300C63AC7 /* LiveroomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveroomVC.m; sourceTree = "<group>"; };
+		851ED3311DE6C88200C63AC7 /* LiveroomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveroomCell.h; sourceTree = "<group>"; };
+		851ED3321DE6C88200C63AC7 /* LiveroomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveroomCell.m; sourceTree = "<group>"; };
+		851ED3341DE6C8B500C63AC7 /* LiveroomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveroomView.h; sourceTree = "<group>"; };
+		851ED3351DE6C8B500C63AC7 /* LiveroomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveroomView.m; sourceTree = "<group>"; };
+		851ED3371DE6D3C900C63AC7 /* liveRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liveRoomModel.h; sourceTree = "<group>"; };
+		851ED3381DE6D3C900C63AC7 /* liveRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liveRoomModel.m; sourceTree = "<group>"; };
+		851ED33B1DE7140200C63AC7 /* registerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registerVC.h; sourceTree = "<group>"; };
+		851ED33C1DE7140200C63AC7 /* registerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registerVC.m; sourceTree = "<group>"; };
 		852F39411DE57A65004F5B92 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		852F39451DE57A95004F5B92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../AllpeopleTV/Images.xcassets; sourceTree = "<group>"; };
@@ -117,6 +132,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		851ED33A1DE7139500C63AC7 /* 注册页面 */ = {
+			isa = PBXGroup;
+			children = (
+				851ED33B1DE7140200C63AC7 /* registerVC.h */,
+				851ED33C1DE7140200C63AC7 /* registerVC.m */,
+			);
+			name = "注册页面";
+			sourceTree = "<group>";
+		};
 		852F39401DE57A4B004F5B92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +175,10 @@
 			children = (
 				85DFFA7A1DDF365600EAEE95 /* liveTVCell.h */,
 				85DFFA7B1DDF365600EAEE95 /* liveTVCell.m */,
+				851ED3311DE6C88200C63AC7 /* LiveroomCell.h */,
+				851ED3321DE6C88200C63AC7 /* LiveroomCell.m */,
+				851ED3341DE6C8B500C63AC7 /* LiveroomView.h */,
+				851ED3351DE6C8B500C63AC7 /* LiveroomView.m */,
 			);
 			name = "直播Cell";
 			sourceTree = "<group>";
@@ -317,6 +345,7 @@
 				85D596BF1DDEF423009AC9CE /* MyHomeVC.m */,
 				852F39471DE57EA1004F5B92 /* MyTableViewController.h */,
 				852F39481DE57EA1004F5B92 /* MyTableViewController.m */,
+				851ED33A1DE7139500C63AC7 /* 注册页面 */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -326,6 +355,8 @@
 			children = (
 				85D596BB1DDEF409009AC9CE /* liveVC.h */,
 				85D596BC1DDEF409009AC9CE /* liveVC.m */,
+				851ED32E1DE6C83300C63AC7 /* LiveroomVC.h */,
+				851ED32F1DE6C83300C63AC7 /* LiveroomVC.m */,
 				858A07491DE2C60700201462 /* 直播Cell */,
 				85DFFA7D1DDF3BA200EAEE95 /* llvelayout.h */,
 				85DFFA7E1DDF3BA200EAEE95 /* llvelayout.m */,
@@ -346,6 +377,8 @@
 			children = (
 				85DFFA741DDF2C5A00EAEE95 /* liveModel.h */,
 				85DFFA751DDF2C5A00EAEE95 /* liveModel.m */,
+				851ED3371DE6D3C900C63AC7 /* liveRoomModel.h */,
+				851ED3381DE6D3C900C63AC7 /* liveRoomModel.m */,
 			);
 			name = "直播Model";
 			sourceTree = "<group>";
@@ -477,22 +510,27 @@
 				85D596A61DDEF0DC009AC9CE /* NSObject+Pares.m in Sources */,
 				85D596A31DDEF0B4009AC9CE /* NSString+ZX_Method.m in Sources */,
 				858A07441DE2963F00201462 /* programaModel.m in Sources */,
+				851ED3301DE6C83300C63AC7 /* LiveroomVC.m in Sources */,
 				85DFFA7F1DDF3BA200EAEE95 /* llvelayout.m in Sources */,
 				85D596981DDEEF87009AC9CE /* BaseNetManager.m in Sources */,
 				85DFFA761DDF2C5A00EAEE95 /* liveModel.m in Sources */,
+				851ED3361DE6C8B500C63AC7 /* LiveroomView.m in Sources */,
 				858A07521DE3155600201462 /* LiveController.m in Sources */,
 				85D596991DDEEF87009AC9CE /* NetManager.m in Sources */,
+				851ED3391DE6D3C900C63AC7 /* liveRoomModel.m in Sources */,
 				85D596B41DDEF3A5009AC9CE /* TableViewController.m in Sources */,
 				85D596A91DDEF0F0009AC9CE /* UIView+HUD.m in Sources */,
 				85D596BD1DDEF409009AC9CE /* liveVC.m in Sources */,
 				858A07481DE29B5800201462 /* programacell.m in Sources */,
 				858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */,
 				85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */,
+				851ED33D1DE7140200C63AC7 /* registerVC.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
 				858A07591DE31B9D00201462 /* LiveLayout.m in Sources */,
 				852F39491DE57EA1004F5B92 /* MyTableViewController.m in Sources */,
 				85D596691DDEE879009AC9CE /* main.m in Sources */,
 				85DFFA7C1DDF365600EAEE95 /* liveTVCell.m in Sources */,
+				851ED3331DE6C88200C63AC7 /* LiveroomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

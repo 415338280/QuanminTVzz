@@ -8,6 +8,7 @@
 
 #import "NetManager.h"
 
+#import "liveRoomModel.h"
 
 
 @implementation NetManager
@@ -39,6 +40,15 @@
         !completionHandeler ?: completionHandeler([programaModel parse:responseObj],error);
     }];
 }
+
++(id)getLiveRoomWithPath:(NSString *)path completionHandeler:(void (^)(liveRoomModel *, NSError *))completionHandeler
+{
+    return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
+        !completionHandeler ?: completionHandeler([liveRoomModel parse:responseObj],error);
+    }];
+    
+}
+
 @end
 
 

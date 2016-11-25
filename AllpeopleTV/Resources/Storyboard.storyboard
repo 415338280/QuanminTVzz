@@ -185,35 +185,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="PJu-WH-aXb">
-                                        <rect key="frame" x="0.0" y="300" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJu-WH-aXb" id="22p-fH-4JT">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sz0-oq-uHT">
-                                                    <rect key="frame" x="24" y="10" width="40" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="3ah-YM-e8K"/>
-                                                        <constraint firstAttribute="height" constant="40" id="PUE-WA-3W3"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游戏中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng4-Ru-pl8">
-                                                    <rect key="frame" x="78" y="19.5" width="69.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ng4-Ru-pl8" firstAttribute="centerY" secondItem="22p-fH-4JT" secondAttribute="centerY" id="fGi-J3-omO"/>
-                                                <constraint firstItem="Sz0-oq-uHT" firstAttribute="leading" secondItem="22p-fH-4JT" secondAttribute="leadingMargin" constant="16" id="kq4-p9-6Dl"/>
-                                                <constraint firstItem="Sz0-oq-uHT" firstAttribute="centerY" secondItem="22p-fH-4JT" secondAttribute="centerY" id="mxe-3t-QyP"/>
-                                                <constraint firstItem="ng4-Ru-pl8" firstAttribute="leading" secondItem="Sz0-oq-uHT" secondAttribute="trailing" constant="14" id="x8o-U9-1Du"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>

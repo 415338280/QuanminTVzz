@@ -7,10 +7,11 @@
 //
 
 #import "liveVC.h"
-
+#import "LiveroomVC.h"
 @interface liveVC ()
-//@property(nonatomic)liveModel *datalist;
+
 @property(nonatomic)NSMutableArray<livedataModel*>* addData;
+
 @property(nonatomic)NSInteger page;
 @end
 @implementation liveVC
@@ -99,7 +100,16 @@
 
     return cell;
 }
-
+#pragma mark - Collection view dalegate  跳转
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString* rid = self.addData[indexPath.row].uid;
+    NSString* livePath = [NSString stringWithFormat:kLiveroomPath,rid];
+    LiveroomVC* VC = [[LiveroomVC alloc]initWithlivePath:livePath];
+    [self presentViewController:VC animated:YES completion:^{
+        
+    }];
+}
 
 
 @end

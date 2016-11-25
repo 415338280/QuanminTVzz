@@ -16,12 +16,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    
+    
     [UITabBar appearance].translucent = NO;
     
     [UINavigationBar appearance].translucent = NO;
-    [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
-        NSLog(@"");
-    }];
+
     self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     [self.window makeKeyAndVisible];
