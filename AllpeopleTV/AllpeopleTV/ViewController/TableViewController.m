@@ -11,6 +11,7 @@
 #import "programaVC.h"
 #import "liveVC.h"
 #import "MyHomeVC.h"
+#import "WMHomePage.h"
 @interface TableViewController ()
 @property(nonatomic)homepageVC* homeVC;
 @property(nonatomic)programaVC* programaVC;
@@ -30,16 +31,16 @@
         layou.itemSize = CGSizeMake(width,higt);
     return layou;
 }
--(homepageVC *)homeVC
-{
-    if (!_homeVC) {
-        _homeVC = [homepageVC new];
-        _homeVC.title = @"首页";
-        _homeVC.tabBarItem.image = [UIImage imageNamed:@"btn_tabbar_home_normal_25x25_"];
-        _homeVC.tabBarItem.selectedImage = [UIImage imageNamed:@"btn_tabbar_home_selected_25x25_"];
-    }
-    return _homeVC;
-}
+//-(homepageVC *)homeVC
+//{
+//    if (!_homeVC) {
+//        _homeVC = [homepageVC new];
+//        _homeVC.title = @"首页";
+//        _homeVC.tabBarItem.image = [UIImage imageNamed:@"btn_tabbar_home_normal_25x25_"];
+//        _homeVC.tabBarItem.selectedImage = [UIImage imageNamed:@"btn_tabbar_home_selected_25x25_"];
+//    }
+//    return _homeVC;
+//}
 -(programaVC*)programaVC
 {
     if (!_programaVC) {
@@ -78,7 +79,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UINavigationController* navi0 = [[UINavigationController alloc]initWithRootViewController:self.homeVC];
+    //给首页控制器 添加根控制器
+    WMHomePage* WMHome = [WMHomePage new];
+    WMHome.title = @"首页";
+    WMHome.menuViewContentMargin = 7;
+    WMHome.menuBGColor = [UIColor whiteColor];
+    WMHome.tabBarItem.image = [UIImage imageNamed:@"btn_tabbar_home_normal_25x25_"];
+    WMHome.tabBarItem.selectedImage = [UIImage imageNamed:@"btn_tabbar_home_selected_25x25_"];
+
+  UINavigationController* navi0 = [[UINavigationController alloc]initWithRootViewController:WMHome];
+   //设置控制器在 导航控制器下位置
+    
+    
+    
     UINavigationController* navi1 = [[UINavigationController alloc]initWithRootViewController:self.programaVC];
     UINavigationController* navi2 = [[UINavigationController alloc]initWithRootViewController:self.liveVC];
   //  UIStoryboard* sy = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
@@ -88,7 +101,7 @@
     navi3.hidesBottomBarWhenPushed = YES;
     self.viewControllers = @[navi0, navi1, navi2, navi3];
     [[UITabBar appearance]setTintColor:[UIColor redColor]];
- 
+    
    // [[UIBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
    // [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
     //[[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor redColor], NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateSelected];

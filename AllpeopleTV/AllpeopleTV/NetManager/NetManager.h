@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BaseNetManager.h"
 #import "liveRoomModel.h"
+#import "HomePageModel.h"
 typedef void(^Myblock)(id * model,NSError* error);
 
 
@@ -17,8 +18,8 @@ typedef void(^Myblock)(id * model,NSError* error);
 +getProgramaModelCompletionHandeler:(void(^)(programaModel* Model,NSError* error))completionHandeler;
 +getLiveTVModelWithslug:(NSString*)slug WithPage:(NSInteger)page completionHandeler:(void(^)(liveModel* model,NSError* error))completionHandeler;
 +getLiveRoomWithPath:(NSString*)path completionHandeler:(void(^)(liveRoomModel* Model,NSError* error))completionHandeler;
-
-
+//获取首页数据
++getHomePageCompletionHandeler:(void(^)(HomePageModel* Model,NSError* error))completionHandeler;
 @end
 
 

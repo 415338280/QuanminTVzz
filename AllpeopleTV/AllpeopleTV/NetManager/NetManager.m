@@ -11,6 +11,7 @@
 #import "liveRoomModel.h"
 
 
+
 @implementation NetManager
 +getLiveModelWithPage:(NSInteger)page CompletionHandeler:(void(^)(liveModel* model,NSError* error))completionHandeler;
 {
@@ -48,6 +49,16 @@
     }];
     
 }
+
+//获取首页数据
++(id)getHomePageCompletionHandeler:(void (^)(HomePageModel *, NSError *))completionHandeler
+{
+    return [self GET:kHomePath parameters:nil completionHandler:^(id responseObj, NSError *error) {
+        !completionHandeler ?: completionHandeler([HomePageModel parse:responseObj],error);
+    }];
+
+}
+
 
 @end
 

@@ -16,6 +16,12 @@
 		852F39441DE57A6C004F5B92 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */; };
 		852F39461DE57A95004F5B92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852F39451DE57A95004F5B92 /* Images.xcassets */; };
 		852F39491DE57EA1004F5B92 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852F39481DE57EA1004F5B92 /* MyTableViewController.m */; };
+		853710421DEC0C2D00757E92 /* WMHomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 853710411DEC0C2D00757E92 /* WMHomePage.m */; };
+		853710461DEC20CF00757E92 /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 853710451DEC20CF00757E92 /* HomePageModel.m */; };
+		8537104A1DEC451200757E92 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 853710481DEC451200757E92 /* HeadView.m */; };
+		8537104B1DEC451200757E92 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853710491DEC451200757E92 /* HeadView.xib */; };
+		8537104E1DEC5A9000757E92 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8537104D1DEC5A9000757E92 /* HomeCell.m */; };
+		853710511DEC605200757E92 /* HomeKongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853710501DEC605200757E92 /* HomeKongCell.m */; };
 		858A07441DE2963F00201462 /* programaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07431DE2963F00201462 /* programaModel.m */; };
 		858A07481DE29B5800201462 /* programacell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07471DE29B5800201462 /* programacell.m */; };
 		858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A074B1DE2CCF600201462 /* UIScrollView+Refresh.m */; };
@@ -56,6 +62,17 @@
 		852F39451DE57A95004F5B92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../AllpeopleTV/Images.xcassets; sourceTree = "<group>"; };
 		852F39471DE57EA1004F5B92 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		852F39481DE57EA1004F5B92 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		853710401DEC0C2D00757E92 /* WMHomePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHomePage.h; sourceTree = "<group>"; };
+		853710411DEC0C2D00757E92 /* WMHomePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHomePage.m; sourceTree = "<group>"; };
+		853710441DEC20CF00757E92 /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
+		853710451DEC20CF00757E92 /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
+		853710471DEC451200757E92 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		853710481DEC451200757E92 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		853710491DEC451200757E92 /* HeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
+		8537104C1DEC5A9000757E92 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		8537104D1DEC5A9000757E92 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		8537104F1DEC605200757E92 /* HomeKongCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeKongCell.h; sourceTree = "<group>"; };
+		853710501DEC605200757E92 /* HomeKongCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeKongCell.m; sourceTree = "<group>"; };
 		858A07421DE2963F00201462 /* programaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programaModel.h; sourceTree = "<group>"; };
 		858A07431DE2963F00201462 /* programaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programaModel.m; sourceTree = "<group>"; };
 		858A07461DE29B5800201462 /* programacell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programacell.h; sourceTree = "<group>"; };
@@ -150,6 +167,15 @@
 			);
 			name = Resources;
 			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		853710431DEC20B800757E92 /* 首页Model */ = {
+			isa = PBXGroup;
+			children = (
+				853710441DEC20CF00757E92 /* HomePageModel.h */,
+				853710451DEC20CF00757E92 /* HomePageModel.m */,
+			);
+			path = "首页Model";
 			sourceTree = "<group>";
 		};
 		858A07411DE2960500201462 /* 栏目Model */ = {
@@ -298,6 +324,7 @@
 		85D596AB1DDEF2FA009AC9CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				853710431DEC20B800757E92 /* 首页Model */,
 				858A07411DE2960500201462 /* 栏目Model */,
 				85DFFA731DDF2C2900EAEE95 /* 直播Model */,
 			);
@@ -334,6 +361,15 @@
 			children = (
 				85D596B51DDEF3D3009AC9CE /* homepageVC.h */,
 				85D596B61DDEF3D3009AC9CE /* homepageVC.m */,
+				853710401DEC0C2D00757E92 /* WMHomePage.h */,
+				853710411DEC0C2D00757E92 /* WMHomePage.m */,
+				853710471DEC451200757E92 /* HeadView.h */,
+				853710481DEC451200757E92 /* HeadView.m */,
+				853710491DEC451200757E92 /* HeadView.xib */,
+				8537104C1DEC5A9000757E92 /* HomeCell.h */,
+				8537104D1DEC5A9000757E92 /* HomeCell.m */,
+				8537104F1DEC605200757E92 /* HomeKongCell.h */,
+				853710501DEC605200757E92 /* HomeKongCell.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -446,6 +482,7 @@
 			files = (
 				852F39461DE57A95004F5B92 /* Images.xcassets in Resources */,
 				852F39441DE57A6C004F5B92 /* Launch Screen.storyboard in Resources */,
+				8537104B1DEC451200757E92 /* HeadView.xib in Resources */,
 				852F39421DE57A65004F5B92 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +547,7 @@
 				85D596A61DDEF0DC009AC9CE /* NSObject+Pares.m in Sources */,
 				85D596A31DDEF0B4009AC9CE /* NSString+ZX_Method.m in Sources */,
 				858A07441DE2963F00201462 /* programaModel.m in Sources */,
+				853710511DEC605200757E92 /* HomeKongCell.m in Sources */,
 				851ED3301DE6C83300C63AC7 /* LiveroomVC.m in Sources */,
 				85DFFA7F1DDF3BA200EAEE95 /* llvelayout.m in Sources */,
 				85D596981DDEEF87009AC9CE /* BaseNetManager.m in Sources */,
@@ -517,14 +555,18 @@
 				851ED3361DE6C8B500C63AC7 /* LiveroomView.m in Sources */,
 				858A07521DE3155600201462 /* LiveController.m in Sources */,
 				85D596991DDEEF87009AC9CE /* NetManager.m in Sources */,
+				8537104E1DEC5A9000757E92 /* HomeCell.m in Sources */,
 				851ED3391DE6D3C900C63AC7 /* liveRoomModel.m in Sources */,
 				85D596B41DDEF3A5009AC9CE /* TableViewController.m in Sources */,
 				85D596A91DDEF0F0009AC9CE /* UIView+HUD.m in Sources */,
 				85D596BD1DDEF409009AC9CE /* liveVC.m in Sources */,
+				853710421DEC0C2D00757E92 /* WMHomePage.m in Sources */,
 				858A07481DE29B5800201462 /* programacell.m in Sources */,
 				858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */,
+				8537104A1DEC451200757E92 /* HeadView.m in Sources */,
 				85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */,
 				851ED33D1DE7140200C63AC7 /* registerVC.m in Sources */,
+				853710461DEC20CF00757E92 /* HomePageModel.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
 				858A07591DE31B9D00201462 /* LiveLayout.m in Sources */,
 				852F39491DE57EA1004F5B92 /* MyTableViewController.m in Sources */,
