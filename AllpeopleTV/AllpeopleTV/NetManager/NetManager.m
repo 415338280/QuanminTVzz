@@ -58,7 +58,12 @@
     }];
 
 }
-
++(id)getHeadHomePageCompletionHandeler:(void (^)(HeadHomePageModel *, NSError *))completionHandeler
+{
+    return [self GET:kHeadHomePath parameters:nil completionHandler:^(id responseObj, NSError *error) {
+        !completionHandeler ?: completionHandeler([HeadHomePageModel parse:responseObj],error);
+    }];
+}
 
 @end
 

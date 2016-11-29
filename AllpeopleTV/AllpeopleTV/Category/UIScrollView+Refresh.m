@@ -46,11 +46,7 @@
     [footer setImages:image forState:MJRefreshStateIdle];
     [footer setImages:image forState:MJRefreshStateRefreshing];
     self.mj_footer = footer;
-//     CGPoint = self.
-//  CGPoint point =  self.contentOffset;
-//    if (<#condition#>) {
-//        <#statements#>
-//    }
+
  
 }
 - (void)endFooterRefresh

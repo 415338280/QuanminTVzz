@@ -49,6 +49,7 @@
         _title = [UILabel new];
         [self.contentView addSubview:_title];
         _title.font = [UIFont systemFontOfSize:13];
+
         [_title mas_makeConstraints:^(MASConstraintMaker *make) {
             CGFloat hight = USHigt * 25 / 1135;
             make.top.equalTo(_image.mas_bottom).offset(hight);
@@ -74,4 +75,20 @@
     return _contens;
 }
 
+-(UILabel *)fans
+{
+    if (!_fans) {
+        _fans = [UILabel new];
+        [self.image addSubview:_fans];
+        _fans.backgroundColor = [UIColor blackColor];
+        _fans.alpha = .5;
+        _fans.layer.cornerRadius = 2;
+        _fans.clipsToBounds = YES;
+        [_fans mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(5);
+            make.bottom.equalTo(-5);
+        }];
+    }
+    return _fans;
+}
 @end

@@ -29,6 +29,10 @@
     if (!_fans) {
         _fans = [UILabel new];
         [self.contentView addSubview:_fans];
+        _fans.layer.cornerRadius = 2;
+        _fans.clipsToBounds = YES;
+        _fans.backgroundColor = [UIColor blackColor];
+        _fans.alpha = 0.5;
         [_fans mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(5);
             make.right.equalTo(-5);
@@ -40,7 +44,11 @@
 {
     if (!_title) {
         _title = [UILabel new];
-        [self.contentView addSubview:_title];
+       [self.contentView addSubview:_title];
+//                _title.backgroundColor = [UIColor colorWithRed:244 / 255.0 green:244 / 255.0 blue:244 / 255.0 alpha:.7];
+        _title.backgroundColor = [UIColor blackColor];
+        _title.alpha = 0.7;
+        _title.textColor = [UIColor whiteColor];
         [_title mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(5);
             make.bottom.equalTo(-5);

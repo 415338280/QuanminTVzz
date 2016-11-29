@@ -21,9 +21,10 @@
 //栏目二级界面连接数据
 #define kLiveTvPath0   @"http://www.quanmin.tv/json/categories/%@/list.json"
 #define kLiveTvPath   @"http://www.quanmin.tv/json/categories/%@/list_%ld.json"
-
+// 首页数据链接
 #define kHomePath  @"http://www.quanmin.tv/json/app/index/recommend/list-iphone.json?1127105609"
-
+// 首页滚动栏链接
+#define kHeadHomePath @"http://www.quanmin.tv/json/page/app-data/info.json"
 
 // 屏幕宽和高
 #define USWidh  [UIScreen mainScreen].bounds.size.width

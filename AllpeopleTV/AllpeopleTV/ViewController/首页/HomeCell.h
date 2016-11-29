@@ -16,4 +16,6 @@
 @property(nonatomic) UILabel* title;
 
 @property(nonatomic) UILabel* contens;
+
+@property(nonatomic) UILabel* fans;
 @end

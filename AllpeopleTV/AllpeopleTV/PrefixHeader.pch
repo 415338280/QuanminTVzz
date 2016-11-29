@@ -22,6 +22,8 @@
 #import <YYKit.h>
 #import <MJRefresh.h>
 #import <MBProgressHUD.h>
+#import <iCarousel.h>
+
 
 
 // 类方法

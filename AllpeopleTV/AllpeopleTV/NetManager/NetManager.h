@@ -10,6 +10,7 @@
 #import "BaseNetManager.h"
 #import "liveRoomModel.h"
 #import "HomePageModel.h"
+#import "HeadHomePageModel.h"
 typedef void(^Myblock)(id * model,NSError* error);
 
 
@@ -20,6 +21,8 @@ typedef void(^Myblock)(id * model,NSError* error);
 +getLiveRoomWithPath:(NSString*)path completionHandeler:(void(^)(liveRoomModel* Model,NSError* error))completionHandeler;
 //获取首页数据
 +getHomePageCompletionHandeler:(void(^)(HomePageModel* Model,NSError* error))completionHandeler;
+// 获取首页头部视图数据
++getHeadHomePageCompletionHandeler:(void(^)(HeadHomePageModel* Model,NSError* error))completionHandeler;
 @end
 
 

@@ -1,0 +1,17 @@
+//
+//  HeadViewCell.h
+//  AllpeopleTV
+//
+//  Created by tarena on 16/11/29.
+//  Copyright © 2016年 Zx. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface HeadViewCell : UICollectionViewCell
+
+//@property(nonatomic) UIPageControl* page;
+
+@property(nonatomic) UILabel* title;
+
+@end

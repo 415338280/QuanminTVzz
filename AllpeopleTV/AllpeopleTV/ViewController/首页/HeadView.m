@@ -47,9 +47,9 @@
         _image.image = [UIImage imageNamed:@"btn_home_content_rignt_cc_normal_20x20_-1"];
         [_image mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(0);
-            make.right.equalTo(-5);
-            make.width.equalTo(5);
-            make.height.equalTo(10);
+            make.right.equalTo(-15);
+            make.width.equalTo(15);
+            make.height.equalTo(15);
         }];
     }
     return _image;
@@ -64,7 +64,7 @@
         _name.font = [UIFont systemFontOfSize:12];
         [_name mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(0);
-            make.right.equalTo(_image.mas_left).offset(5);
+            make.right.equalTo(_image.mas_left).offset(-5);
         }];
     }
     return _name;

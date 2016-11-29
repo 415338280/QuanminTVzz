@@ -22,6 +22,8 @@
 		8537104B1DEC451200757E92 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853710491DEC451200757E92 /* HeadView.xib */; };
 		8537104E1DEC5A9000757E92 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8537104D1DEC5A9000757E92 /* HomeCell.m */; };
 		853710511DEC605200757E92 /* HomeKongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853710501DEC605200757E92 /* HomeKongCell.m */; };
+		855389251DED548500E81F29 /* HeadHomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855389241DED548500E81F29 /* HeadHomePageModel.m */; };
+		855389281DED62E500E81F29 /* HeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855389271DED62E500E81F29 /* HeadViewCell.m */; };
 		858A07441DE2963F00201462 /* programaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07431DE2963F00201462 /* programaModel.m */; };
 		858A07481DE29B5800201462 /* programacell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07471DE29B5800201462 /* programacell.m */; };
 		858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A074B1DE2CCF600201462 /* UIScrollView+Refresh.m */; };
@@ -73,6 +75,10 @@
 		8537104D1DEC5A9000757E92 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		8537104F1DEC605200757E92 /* HomeKongCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeKongCell.h; sourceTree = "<group>"; };
 		853710501DEC605200757E92 /* HomeKongCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeKongCell.m; sourceTree = "<group>"; };
+		855389231DED548500E81F29 /* HeadHomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadHomePageModel.h; sourceTree = "<group>"; };
+		855389241DED548500E81F29 /* HeadHomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadHomePageModel.m; sourceTree = "<group>"; };
+		855389261DED62E500E81F29 /* HeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewCell.h; sourceTree = "<group>"; };
+		855389271DED62E500E81F29 /* HeadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewCell.m; sourceTree = "<group>"; };
 		858A07421DE2963F00201462 /* programaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programaModel.h; sourceTree = "<group>"; };
 		858A07431DE2963F00201462 /* programaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programaModel.m; sourceTree = "<group>"; };
 		858A07461DE29B5800201462 /* programacell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programacell.h; sourceTree = "<group>"; };
@@ -174,6 +180,8 @@
 			children = (
 				853710441DEC20CF00757E92 /* HomePageModel.h */,
 				853710451DEC20CF00757E92 /* HomePageModel.m */,
+				855389231DED548500E81F29 /* HeadHomePageModel.h */,
+				855389241DED548500E81F29 /* HeadHomePageModel.m */,
 			);
 			path = "首页Model";
 			sourceTree = "<group>";
@@ -366,6 +374,8 @@
 				853710471DEC451200757E92 /* HeadView.h */,
 				853710481DEC451200757E92 /* HeadView.m */,
 				853710491DEC451200757E92 /* HeadView.xib */,
+				855389261DED62E500E81F29 /* HeadViewCell.h */,
+				855389271DED62E500E81F29 /* HeadViewCell.m */,
 				8537104C1DEC5A9000757E92 /* HomeCell.h */,
 				8537104D1DEC5A9000757E92 /* HomeCell.m */,
 				8537104F1DEC605200757E92 /* HomeKongCell.h */,
@@ -551,6 +561,7 @@
 				851ED3301DE6C83300C63AC7 /* LiveroomVC.m in Sources */,
 				85DFFA7F1DDF3BA200EAEE95 /* llvelayout.m in Sources */,
 				85D596981DDEEF87009AC9CE /* BaseNetManager.m in Sources */,
+				855389281DED62E500E81F29 /* HeadViewCell.m in Sources */,
 				85DFFA761DDF2C5A00EAEE95 /* liveModel.m in Sources */,
 				851ED3361DE6C8B500C63AC7 /* LiveroomView.m in Sources */,
 				858A07521DE3155600201462 /* LiveController.m in Sources */,
@@ -565,6 +576,7 @@
 				858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */,
 				8537104A1DEC451200757E92 /* HeadView.m in Sources */,
 				85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */,
+				855389251DED548500E81F29 /* HeadHomePageModel.m in Sources */,
 				851ED33D1DE7140200C63AC7 /* registerVC.m in Sources */,
 				853710461DEC20CF00757E92 /* HomePageModel.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
