@@ -9,10 +9,12 @@
 #import "programaVC.h"
 #import "programacell.h"
 #import "liveVC.h"
+#import ""
 @interface programaVC ()<UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic)NSArray<programaModel*>* programalist;
 @property(nonatomic)UICollectionViewFlowLayout* layou;
 @property(nonatomic)UICollectionView* Covc;
+@property(nonatomic, strong)NoNetView *noNetView;
 @end
 
 @implementation programaVC
@@ -27,7 +29,6 @@
 -(UICollectionView *)Covc
 {
     if (!_Covc) {
-       
         _layou = [UICollectionViewFlowLayout new];
         _Covc = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0,USWidh, USHigt) collectionViewLayout:_layou];
         _layou.sectionInset = UIEdgeInsetsMake(12, 12, 12, 12);
@@ -43,33 +44,57 @@
     }
     return _Covc;
 }
+-(int *)noNetView
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.Covc];
-//    __weak Class weakself = self;
+    if (kIsOnline) {
+        [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
+            self.programalist =   [self.programalist arrayByAddingObjectsFromArray:(NSArray*)Model];
+            [self.view addSubview:self.Covc];
+            [self.Covc reloadData];
+        }];
+    }else
+    {
+        self.
+    }
     
-//    MJWeakSelf
-//    __weak typeof(self) weakSelf = self;
-//    __weak typeof  weakSelf = self;
-    __weak typeof(self) weakSelf = self;
-    [weakSelf.Covc addHeaderRefresh:^{
-               [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
-                   [self.Covc endHeaderRefresh];
-                   if (!error) {
-                     self.programalist =   [self.programalist arrayByAddingObjectsFromArray:(NSArray*)Model];
-                       [self.Covc reloadData];
-                   }
-               }];
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
+    [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
+        [self.Covc endHeaderRefresh];
+        if (!error) {
+            self.programalist =   [self.programalist arrayByAddingObjectsFromArray:(NSArray*)Model];
+            [self.Covc reloadData];
+        }
     }];
-    [self.Covc beginHeaderRefresh];
-   __block int num = 10;
-    [weakSelf.Covc addFooterRefresh:^{
-        [self.Covc endFooterRefresh];
-//        if (num == 15) {
-//            [self.Covc endFooterRefreshWithNoMoreData];
-//        }
-        num++;
-    }];
+    
     
     
     //  自定义的刷新动画
@@ -92,7 +117,7 @@
 //    }];
 //    [self.Covc.mj_header beginRefreshing];
     
-
+*/
 }
 
 - (void)didReceiveMemoryWarning {

@@ -29,4 +29,6 @@
 // 屏幕宽和高
 #define USWidh  [UIScreen mainScreen].bounds.size.width
 #define USHigt  [UIScreen mainScreen].bounds.size.height
+
+#define kIsOnline  ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus == 1 ||  [AFNetworkReachabilityManager sharedManager].networkReachabilityStatus == 2)
 #endif /* Constant_h */

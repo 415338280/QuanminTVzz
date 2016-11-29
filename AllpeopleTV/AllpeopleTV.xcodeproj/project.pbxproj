@@ -24,6 +24,10 @@
 		853710511DEC605200757E92 /* HomeKongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853710501DEC605200757E92 /* HomeKongCell.m */; };
 		855389251DED548500E81F29 /* HeadHomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855389241DED548500E81F29 /* HeadHomePageModel.m */; };
 		855389281DED62E500E81F29 /* HeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855389271DED62E500E81F29 /* HeadViewCell.m */; };
+		857BB8D91DEDB168003F432F /* ani_popover_loading_yz_small副本.gif in Resources */ = {isa = PBXBuildFile; fileRef = 857BB8D61DEDB168003F432F /* ani_popover_loading_yz_small副本.gif */; };
+		857BB8DA1DEDB168003F432F /* ani_popover_loading_yz副本.gif in Resources */ = {isa = PBXBuildFile; fileRef = 857BB8D71DEDB168003F432F /* ani_popover_loading_yz副本.gif */; };
+		857BB8DB1DEDB168003F432F /* btn_nav_open_ani_sc_normal副本.gif in Resources */ = {isa = PBXBuildFile; fileRef = 857BB8D81DEDB168003F432F /* btn_nav_open_ani_sc_normal副本.gif */; };
+		857BB8DF1DEDB62D003F432F /* NoNetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 857BB8DE1DEDB62D003F432F /* NoNetView.m */; };
 		858A07441DE2963F00201462 /* programaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07431DE2963F00201462 /* programaModel.m */; };
 		858A07481DE29B5800201462 /* programacell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A07471DE29B5800201462 /* programacell.m */; };
 		858A074C1DE2CCF600201462 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 858A074B1DE2CCF600201462 /* UIScrollView+Refresh.m */; };
@@ -79,6 +83,11 @@
 		855389241DED548500E81F29 /* HeadHomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadHomePageModel.m; sourceTree = "<group>"; };
 		855389261DED62E500E81F29 /* HeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewCell.h; sourceTree = "<group>"; };
 		855389271DED62E500E81F29 /* HeadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewCell.m; sourceTree = "<group>"; };
+		857BB8D61DEDB168003F432F /* ani_popover_loading_yz_small副本.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ani_popover_loading_yz_small副本.gif"; sourceTree = "<group>"; };
+		857BB8D71DEDB168003F432F /* ani_popover_loading_yz副本.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ani_popover_loading_yz副本.gif"; sourceTree = "<group>"; };
+		857BB8D81DEDB168003F432F /* btn_nav_open_ani_sc_normal副本.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "btn_nav_open_ani_sc_normal副本.gif"; sourceTree = "<group>"; };
+		857BB8DD1DEDB62D003F432F /* NoNetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoNetView.h; sourceTree = "<group>"; };
+		857BB8DE1DEDB62D003F432F /* NoNetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoNetView.m; sourceTree = "<group>"; };
 		858A07421DE2963F00201462 /* programaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programaModel.h; sourceTree = "<group>"; };
 		858A07431DE2963F00201462 /* programaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programaModel.m; sourceTree = "<group>"; };
 		858A07461DE29B5800201462 /* programacell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programacell.h; sourceTree = "<group>"; };
@@ -167,6 +176,9 @@
 		852F39401DE57A4B004F5B92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				857BB8D61DEDB168003F432F /* ani_popover_loading_yz_small副本.gif */,
+				857BB8D71DEDB168003F432F /* ani_popover_loading_yz副本.gif */,
+				857BB8D81DEDB168003F432F /* btn_nav_open_ani_sc_normal副本.gif */,
 				852F39411DE57A65004F5B92 /* Storyboard.storyboard */,
 				852F39451DE57A95004F5B92 /* Images.xcassets */,
 				852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */,
@@ -184,6 +196,15 @@
 				855389241DED548500E81F29 /* HeadHomePageModel.m */,
 			);
 			path = "首页Model";
+			sourceTree = "<group>";
+		};
+		857BB8DC1DEDB610003F432F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				857BB8DD1DEDB62D003F432F /* NoNetView.h */,
+				857BB8DE1DEDB62D003F432F /* NoNetView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		858A07411DE2960500201462 /* 栏目Model */ = {
@@ -342,6 +363,7 @@
 		85D596AD1DDEF328009AC9CE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				857BB8DC1DEDB610003F432F /* View */,
 				858A07561DE31B7E00201462 /* Layout */,
 				85D596B21DDEF3A5009AC9CE /* TableViewController.h */,
 				85D596B31DDEF3A5009AC9CE /* TableViewController.m */,
@@ -490,10 +512,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857BB8DA1DEDB168003F432F /* ani_popover_loading_yz副本.gif in Resources */,
 				852F39461DE57A95004F5B92 /* Images.xcassets in Resources */,
 				852F39441DE57A6C004F5B92 /* Launch Screen.storyboard in Resources */,
+				857BB8DB1DEDB168003F432F /* btn_nav_open_ani_sc_normal副本.gif in Resources */,
 				8537104B1DEC451200757E92 /* HeadView.xib in Resources */,
 				852F39421DE57A65004F5B92 /* Storyboard.storyboard in Resources */,
+				857BB8D91DEDB168003F432F /* ani_popover_loading_yz_small副本.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +608,7 @@
 				858A07591DE31B9D00201462 /* LiveLayout.m in Sources */,
 				852F39491DE57EA1004F5B92 /* MyTableViewController.m in Sources */,
 				85D596691DDEE879009AC9CE /* main.m in Sources */,
+				857BB8DF1DEDB62D003F432F /* NoNetView.m in Sources */,
 				85DFFA7C1DDF365600EAEE95 /* liveTVCell.m in Sources */,
 				851ED3331DE6C88200C63AC7 /* LiveroomCell.m in Sources */,
 			);
