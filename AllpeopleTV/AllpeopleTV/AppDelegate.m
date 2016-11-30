@@ -8,25 +8,49 @@
 
 #import "AppDelegate.h"
 #import "TableViewController.h"
+#import "WelcomeViewController.h"
 @interface AppDelegate ()
+@property(nonatomic) WelcomeViewController* welcomeVC;
+
+@property(nonatomic) UIWindow* welecomWind;
 
 @end
 
 @implementation AppDelegate
 
+-(WelcomeViewController *)welcomeVC
+{
+    if (!_welcomeVC) {
+        _welcomeVC = [WelcomeViewController new];
+    }
+    return _welcomeVC;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
     
     [UITabBar appearance].translucent = NO;
     
     [UINavigationBar appearance].translucent = NO;
-
+    
     self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     [self.window makeKeyAndVisible];
     
     _window.rootViewController = [TableViewController new];
+    
+    NSDictionary* infoDic = [NSBundle mainBundle].infoDictionary;
+    
+    NSString* version = infoDic[@"CFBundleShortVersionString"];
+    
+    if (![[user objectForKey:@"kRunVersion"]isEqualToString:version]) {
+        _welecomWind = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        
+        _welecomWind.backgroundColor = [UIColor yellowColor];
+        
+        _welecomWind.hidden = NO;
+        
+        _welecomWind.rootViewController = self.welcomeVC;
+    }
      
     return YES;
 }

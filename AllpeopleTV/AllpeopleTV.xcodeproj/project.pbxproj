@@ -46,6 +46,7 @@
 		85D596BA1DDEF3EC009AC9CE /* programaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596B91DDEF3EC009AC9CE /* programaVC.m */; };
 		85D596BD1DDEF409009AC9CE /* liveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596BC1DDEF409009AC9CE /* liveVC.m */; };
 		85D596C01DDEF423009AC9CE /* MyHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D596BF1DDEF423009AC9CE /* MyHomeVC.m */; };
+		85DB08321DEEDA0D00D93C16 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DB08311DEEDA0D00D93C16 /* WelcomeViewController.m */; };
 		85DFFA761DDF2C5A00EAEE95 /* liveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DFFA751DDF2C5A00EAEE95 /* liveModel.m */; };
 		85DFFA7C1DDF365600EAEE95 /* liveTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DFFA7B1DDF365600EAEE95 /* liveTVCell.m */; };
 		85DFFA7F1DDF3BA200EAEE95 /* llvelayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DFFA7E1DDF3BA200EAEE95 /* llvelayout.m */; };
@@ -127,6 +128,8 @@
 		85D596BC1DDEF409009AC9CE /* liveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liveVC.m; sourceTree = "<group>"; };
 		85D596BE1DDEF423009AC9CE /* MyHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHomeVC.h; sourceTree = "<group>"; };
 		85D596BF1DDEF423009AC9CE /* MyHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHomeVC.m; sourceTree = "<group>"; };
+		85DB08301DEEDA0D00D93C16 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		85DB08311DEEDA0D00D93C16 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		85DFFA741DDF2C5A00EAEE95 /* liveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liveModel.h; sourceTree = "<group>"; };
 		85DFFA751DDF2C5A00EAEE95 /* liveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liveModel.m; sourceTree = "<group>"; };
 		85DFFA791DDF30DE00EAEE95 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -368,6 +371,7 @@
 		85D596AD1DDEF328009AC9CE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				85DB082F1DEED9F100D93C16 /* 欢迎界面 */,
 				857BB8DC1DEDB610003F432F /* View */,
 				858A07561DE31B7E00201462 /* Layout */,
 				85D596B21DDEF3A5009AC9CE /* TableViewController.h */,
@@ -443,6 +447,15 @@
 				85DFFA791DDF30DE00EAEE95 /* Constant.h */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		85DB082F1DEED9F100D93C16 /* 欢迎界面 */ = {
+			isa = PBXGroup;
+			children = (
+				85DB08301DEEDA0D00D93C16 /* WelcomeViewController.h */,
+				85DB08311DEEDA0D00D93C16 /* WelcomeViewController.m */,
+			);
+			path = "欢迎界面";
 			sourceTree = "<group>";
 		};
 		85DFFA731DDF2C2900EAEE95 /* 直播Model */ = {
@@ -611,6 +624,7 @@
 				851ED33D1DE7140200C63AC7 /* registerVC.m in Sources */,
 				853710461DEC20CF00757E92 /* HomePageModel.m in Sources */,
 				85D5966C1DDEE879009AC9CE /* AppDelegate.m in Sources */,
+				85DB08321DEEDA0D00D93C16 /* WelcomeViewController.m in Sources */,
 				858A07591DE31B9D00201462 /* LiveLayout.m in Sources */,
 				852F39491DE57EA1004F5B92 /* MyTableViewController.m in Sources */,
 				85D596691DDEE879009AC9CE /* main.m in Sources */,
