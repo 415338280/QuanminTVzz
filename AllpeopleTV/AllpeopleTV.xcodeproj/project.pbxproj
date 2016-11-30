@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5512FA4C1DEDF1E200362CF6 /* ZXRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5512FA4B1DEDF1E200362CF6 /* ZXRefreshHeader.m */; };
 		851ED3301DE6C83300C63AC7 /* LiveroomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED32F1DE6C83300C63AC7 /* LiveroomVC.m */; };
 		851ED3331DE6C88200C63AC7 /* LiveroomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED3321DE6C88200C63AC7 /* LiveroomCell.m */; };
 		851ED3361DE6C8B500C63AC7 /* LiveroomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED3351DE6C8B500C63AC7 /* LiveroomView.m */; };
@@ -52,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5512FA4A1DEDF1E200362CF6 /* ZXRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXRefreshHeader.h; sourceTree = "<group>"; };
+		5512FA4B1DEDF1E200362CF6 /* ZXRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXRefreshHeader.m; sourceTree = "<group>"; };
 		69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.release.xcconfig"; sourceTree = "<group>"; };
 		851ED32E1DE6C83300C63AC7 /* LiveroomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveroomVC.h; sourceTree = "<group>"; };
 		851ED32F1DE6C83300C63AC7 /* LiveroomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveroomVC.m; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 		85D596971DDEEF87009AC9CE /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				5512FA4A1DEDF1E200362CF6 /* ZXRefreshHeader.h */,
+				5512FA4B1DEDF1E200362CF6 /* ZXRefreshHeader.m */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 				851ED3361DE6C8B500C63AC7 /* LiveroomView.m in Sources */,
 				858A07521DE3155600201462 /* LiveController.m in Sources */,
 				85D596991DDEEF87009AC9CE /* NetManager.m in Sources */,
+				5512FA4C1DEDF1E200362CF6 /* ZXRefreshHeader.m in Sources */,
 				8537104E1DEC5A9000757E92 /* HomeCell.m in Sources */,
 				851ED3391DE6D3C900C63AC7 /* liveRoomModel.m in Sources */,
 				85D596B41DDEF3A5009AC9CE /* TableViewController.m in Sources */,

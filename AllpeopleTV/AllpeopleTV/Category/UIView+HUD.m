@@ -21,4 +21,11 @@
 {
     [MBProgressHUD hideAllHUDsForView:self animated:YES];
 }
+- (void)showMsg:(NSString *)msg{
+    [self hideHUD];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.label.text = msg;
+    [hud hideAnimated:YES afterDelay:1.5];
+}
 @end

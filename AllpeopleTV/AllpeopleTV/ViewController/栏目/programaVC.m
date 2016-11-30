@@ -9,12 +9,13 @@
 #import "programaVC.h"
 #import "programacell.h"
 #import "liveVC.h"
-#import ""
+#import "NoNetView.h"
 @interface programaVC ()<UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic)NSArray<programaModel*>* programalist;
 @property(nonatomic)UICollectionViewFlowLayout* layou;
 @property(nonatomic)UICollectionView* Covc;
 @property(nonatomic, strong)NoNetView *noNetView;
+@property (nonatomic) UIImageView *iconIV;
 @end
 
 @implementation programaVC
@@ -30,7 +31,7 @@
 {
     if (!_Covc) {
         _layou = [UICollectionViewFlowLayout new];
-        _Covc = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0,USWidh, USHigt) collectionViewLayout:_layou];
+        _Covc = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0,USWidh, USHigt - 64 - 48) collectionViewLayout:_layou];
         _layou.sectionInset = UIEdgeInsetsMake(12, 12, 12, 12);
         _layou.minimumLineSpacing = 8;
         _layou.minimumInteritemSpacing = 7;
@@ -41,23 +42,57 @@
         _Covc.dataSource = self;
         [_Covc registerClass:[programacell class] forCellWithReuseIdentifier:@"programacell"];
         _Covc.backgroundColor = [UIColor whiteColor];
+        self.Covc.alwaysBounceVertical = YES;
     }
     return _Covc;
 }
--(int *)noNetView
+-(NoNetView *)noNetView
+{
+    if (!_noNetView) {
+       _noNetView = [[NoNetView alloc]initWithRefreshBlock:^{
+           if (!kIsOnline) {
+               self.noNetView.hidden = YES;
+               [self refreshContent];
+           }else{
+               [self.view showMsg:@"请稍后重试"];
+           }
+       }];
+        [self.view addSubview:_noNetView];
+        [_noNetView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(0);
+        }];
+    }
+    return _noNetView;
+}
+// 封装获取数据方法
+-(void)refreshContent {
+    [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
+        self.programalist =   [self.programalist arrayByAddingObjectsFromArray:(NSArray*)Model];
+
+        [self.Covc reloadData];
+    }];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if (kIsOnline) {
-        [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
-            self.programalist =   [self.programalist arrayByAddingObjectsFromArray:(NSArray*)Model];
-            [self.view addSubview:self.Covc];
-            [self.Covc reloadData];
-        }];
-    }else
+    [self.view addSubview:self.Covc];
+    if (kIsOnline)
     {
-        self.
+        [self refreshContent];
+    }
+    else
+    {
+        self.noNetView.hidden = NO;
     }
     
+    self.Covc.showsVerticalScrollIndicator = NO;
+    
+    _iconIV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bubble_0_57x63_"]];
+    [self.Covc addSubview:_iconIV];
+    [_iconIV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(0);
+        make.centerX.equalTo(0);
+    }];
+
     
   
     

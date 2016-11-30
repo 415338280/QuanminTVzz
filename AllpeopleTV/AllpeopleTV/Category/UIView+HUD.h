@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (HUD)
--(void)showHUD;
--(void)hideHUD;
+- (void)showHUD;
+
+- (void)hideHUD;
+- (void)showMsg:(NSString *)msg;
 @end

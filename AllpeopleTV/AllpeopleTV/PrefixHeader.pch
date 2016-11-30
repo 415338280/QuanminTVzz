@@ -53,4 +53,6 @@
 #import "programaVC.h"
 //网络获取类
 #import "NetManager.h"
+
+#define kIsOnline ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus == 1 ||  [AFNetworkReachabilityManager sharedManager].networkReachabilityStatus == 2)
 #endif /* PrefixHeader_pch */
