@@ -89,8 +89,7 @@
 
   UINavigationController* navi0 = [[UINavigationController alloc]initWithRootViewController:WMHome];
    //设置控制器在 导航控制器下位置
-    
-    
+
     
     UINavigationController* navi1 = [[UINavigationController alloc]initWithRootViewController:self.programaVC];
     UINavigationController* navi2 = [[UINavigationController alloc]initWithRootViewController:self.liveVC];

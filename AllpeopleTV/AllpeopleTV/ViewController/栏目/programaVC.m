@@ -51,7 +51,6 @@
     if (!_noNetView) {
        _noNetView = [[NoNetView alloc]initWithRefreshBlock:^{
            if (!kIsOnline) {
-               self.noNetView.hidden = YES;
                [self refreshContent];
            }else{
                [self.view showMsg:@"请稍后重试"];
@@ -66,16 +65,21 @@
 }
 // 封装获取数据方法
 -(void)refreshContent {
+    [self.view showHUD];
     [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
-        self.programalist =   [self.programalist arrayByAddingObjectsFromArray:(NSArray*)Model];
-
-        [self.Covc reloadData];
+        sleep(2);
+        if (!error) {
+            self.programalist =   [self.programalist arrayByAddingObjectsFromArray:(NSArray*)Model];
+        }
+        [self.view hideHUD];
+          [self.Covc reloadData];
+        
     }];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.Covc];
-    if (kIsOnline)
+    if (!kIsOnline)
     {
         [self refreshContent];
     }
@@ -87,12 +91,24 @@
     self.Covc.showsVerticalScrollIndicator = NO;
     
     _iconIV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bubble_0_57x63_"]];
-    [self.Covc addSubview:_iconIV];
-    [_iconIV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(0);
-        make.centerX.equalTo(0);
+//    [self.Covc addSubview:_iconIV];
+//    [_iconIV mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.bottom.equalTo(0);
+//        make.centerX.equalTo(0);
+//    }];
+    MJWeakSelf
+    [weakSelf.Covc addHeaderRefresh:^{
+        [NetManager getProgramaModelCompletionHandeler:^(programaModel *Model, NSError *error) {
+            if (!error) {
+                self.programalist =   [self.programalist arrayByAddingObjectsFromArray:(NSArray*)Model];
+            }
+            [self.Covc reloadData];
+            [self.Covc endHeaderRefresh];
+            [NSTimer bk_scheduledTimerWithTimeInterval:.4 block:^(NSTimer *timer) {
+                [weakSelf.Covc configHeader];
+            } repeats:NO];
+        }];
     }];
-
     
   
     

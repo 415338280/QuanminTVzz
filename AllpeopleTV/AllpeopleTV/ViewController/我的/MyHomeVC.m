@@ -38,11 +38,12 @@
        make.left.right.bottom.equalTo(0);
        make.top.equalTo(_headView.mas_bottom);
     }];
+    
     UIView * vc = [UIView new];
     
     vc.backgroundColor = [UIColor yellowColor];
-    myVC.tableView.tableFooterView = vc;
     
+    myVC.tableView.tableFooterView = vc;
     
 }
 
@@ -64,7 +65,7 @@
         }];
         //聊天
         UIButton* chat = [UIButton buttonWithType:UIButtonTypeSystem];
-        [chat setImage:[UIImage imageNamed:@"ic_profile_room_25x25_"] forState:
+        [chat setImage:[UIImage imageNamed:@"mine_message_icon_25x25_"] forState:
          UIControlStateNormal];
         [_headView addSubview:chat];
         [chat mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -73,7 +74,7 @@
         }];
         //  设置
         UIButton* set = [UIButton buttonWithType:UIButtonTypeSystem];
-        [set setImage:[UIImage imageNamed:@"btn_nav_search_selected_25x25_"] forState:UIControlStateNormal];
+        [set setImage:[UIImage imageNamed:@"mine_setting_icon_25x25_"] forState:UIControlStateNormal];
         [_headView addSubview: set];
         [set mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(-20);

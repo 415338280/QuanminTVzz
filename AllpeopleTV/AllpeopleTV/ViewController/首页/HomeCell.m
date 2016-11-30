@@ -80,8 +80,7 @@
     if (!_fans) {
         _fans = [UILabel new];
         [self.image addSubview:_fans];
-        _fans.backgroundColor = [UIColor blackColor];
-        _fans.alpha = .5;
+        _fans.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
         _fans.layer.cornerRadius = 2;
         _fans.clipsToBounds = YES;
         [_fans mas_makeConstraints:^(MASConstraintMaker *make) {

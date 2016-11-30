@@ -94,12 +94,13 @@
         _view = [UILabel new];
         [self.thumb addSubview:_view];
         _view.textColor = [UIColor whiteColor];
-        _view.backgroundColor = [UIColor blackColor];
-        _view.alpha = 0.5;
+        _view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+        _view.layer.cornerRadius = 4;
+        _view.clipsToBounds = YES;
         [_view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(10);
             make.bottom.equalTo(-10);
-            make.width.equalTo(20);
+//            make.width.equalTo(60);
         }];
     }
     return _view;

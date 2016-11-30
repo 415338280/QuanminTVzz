@@ -32,9 +32,7 @@
         self.gifView.contentMode = UIViewContentModeTop;
         [self label];
         self.mj_h = 80; //头部视图的高度
-
     }
-    
 }
 
 /*

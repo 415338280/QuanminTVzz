@@ -10,9 +10,11 @@
 #import "LiveroomVC.h"
 @interface liveVC ()
 
-@property(nonatomic)NSMutableArray<livedataModel*>* addData;
+@property(nonatomic) NSMutableArray<livedataModel*>* addData;
 
-@property(nonatomic)NSInteger page;
+@property(nonatomic) NSInteger page;
+
+@property(nonatomic) NSTimer* timer;
 @end
 @implementation liveVC
 //-(NSArray<liveModel *> *)datalist
@@ -34,18 +36,21 @@
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[liveTVCell class] forCellWithReuseIdentifier:@"liveTVCell"];
-    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-          [NetManager getLiveModelWithPage:0 CompletionHandeler:^(liveModel *model, NSError *error) {
-
-              [self.addData removeAllObjects];
-
-              [self.addData addObjectsFromArray:model.data];
-              [self.collectionView reloadData];
-              [self.collectionView.mj_header endRefreshing];
-              self.page = 0;
-          }];
+    MJWeakSelf
+    [weakSelf.collectionView addHeaderRefresh:^{
+        [NetManager getLiveModelWithPage:0 CompletionHandeler:^(liveModel *model, NSError *error) {
+            [self.addData removeAllObjects];
+            [self.addData addObjectsFromArray:model.data];
+            [self.collectionView reloadData];
+            [self.collectionView.mj_header endRefreshing];
+            self.page = 0;
+            [NSTimer bk_timerWithTimeInterval:4 block:^(NSTimer *timer) {
+                [self.collectionView configHeader];
+            } repeats:YES];
+        }];
     }];
     [self.collectionView.mj_header beginRefreshing];
+    
 //    
     self.collectionView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         [NetManager getLiveModelWithPage:self.page + 1 CompletionHandeler:^(liveModel *model, NSError *error) {
@@ -90,12 +95,12 @@
     follow = [NSString stringWithFormat:@" %@ ", follow];
     NSAttributedString* str1 = [[NSAttributedString alloc]initWithString:follow attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName: [UIFont systemFontOfSize:13]}];
     NSTextAttachment* ima = [NSTextAttachment new];
-    ima.image = [UIImage imageNamed:@"player_audienceCount_icon"];
-    ima.bounds = CGRectMake(4, -2, 12, 12);
+    ima.image = [UIImage imageNamed:@"player_audienceCount_icon_10x10_"];
+    ima.bounds = CGRectMake(4, 0, 8, 12);
     NSAttributedString* str2 = [NSAttributedString attributedStringWithAttachment:ima];
     NSMutableAttributedString* str = [NSMutableAttributedString new];
-    [str appendAttributedString: str1];
     [str appendAttributedString: str2];
+    [str appendAttributedString: str1];
     cell.view.attributedText = str;
 
     return cell;

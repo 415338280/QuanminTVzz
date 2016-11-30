@@ -31,8 +31,8 @@
         [self.contentView addSubview:_fans];
         _fans.layer.cornerRadius = 2;
         _fans.clipsToBounds = YES;
-        _fans.backgroundColor = [UIColor blackColor];
-        _fans.alpha = 0.5;
+        _fans.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+
         [_fans mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(5);
             make.right.equalTo(-5);

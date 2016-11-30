@@ -81,9 +81,7 @@
 -(UICollectionView*)HomeVC
 {
     if (!_HomeVC) {
-        _HomeVC  = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, USWidh, USHigt) collectionViewLayout:self.layou];
-        _HomeVC.dataSource = self;
-        _HomeVC.delegate = self;
+        _HomeVC  = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, USWidh, USHigt - 64 - 48) collectionViewLayout:self.layou];
         [self.HomeVC registerClass:[HomeCell class] forCellWithReuseIdentifier:@"HomeCell"];
         [self.HomeVC registerClass:[HomeKongCell class] forCellWithReuseIdentifier:@"HomeKongCell"];
         [self.HomeVC registerClass:[HeadViewCell class] forCellWithReuseIdentifier:@"HeadViewCell"];
@@ -127,23 +125,40 @@
     }
     return _layou;
 }
+// 封装获取数据方法
+
 #pragma mark --- View加载
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NetManager getHomePageCompletionHandeler:^(HomePageModel *Model, NSError *error) {
-        self.modeldata = Model;
-        [self HomeVC];
-        [self headName];
-        [self list];
-      
+    self.HomeVC.showsVerticalScrollIndicator = NO;
+    MJWeakSelf
+    [weakSelf.HomeVC addHeaderRefresh:^{
+        [NetManager getHomePageCompletionHandeler:^(HomePageModel *Model, NSError *error) {
+            if (!error) {
+                self.modeldata = Model;
+                [self headName];
+                [self list];
+                _HomeVC.dataSource = self;
+                _HomeVC.delegate = self;
+                [_HomeVC reloadData];
+                [self.HomeVC endHeaderRefresh];
+            }
+            
+        }];
+        [NetManager getHeadHomePageCompletionHandeler:^(HeadHomePageModel *Model, NSError *error) {
+            if (!error) {
+                self.headModel = Model.iosfocus;
+                [self HomeVC];
+                [_HomeVC reloadData];
+
+            }
+        }];
+        
+        [NSTimer bk_scheduledTimerWithTimeInterval:4 block:^(NSTimer *timer) {
+            [self.HomeVC configHeader];
+        } repeats:NO];
     }];
- 
-    [NetManager getHeadHomePageCompletionHandeler:^(HeadHomePageModel *Model, NSError *error) {
-       
-       self.headModel = Model.iosfocus;
-     
-   }];
-  
+     [self.HomeVC beginHeaderRefresh];
     
     
 }
@@ -196,7 +211,7 @@
     if (section == 0) {
         return 1;
     }
-    return self.list[ind].list.count;
+    return self.list[section - 1].list.count;
 }
 
 ///Cell
@@ -260,7 +275,7 @@
 {
     if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
         UICollectionReusableView* cell = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footView" forIndexPath:indexPath];
-        cell.backgroundColor = [UIColor lightGrayColor];
+        cell.backgroundColor =  [UIColor colorWithRed:247 / 255.0 green:252 / 255.0 blue:1 alpha:1];
         return  cell;
     }else
     {
