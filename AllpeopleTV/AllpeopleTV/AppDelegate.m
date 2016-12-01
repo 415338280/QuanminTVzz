@@ -42,7 +42,7 @@
     
     NSString* version = infoDic[@"CFBundleShortVersionString"];
     
-    if ([[user objectForKey:@"kRunVersion"]isEqualToString:version]) {
+    if (![[user objectForKey:@"kRunVersion"]isEqualToString:version]) {
         _welecomWind = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
         
         _welecomWind.backgroundColor = [UIColor yellowColor];

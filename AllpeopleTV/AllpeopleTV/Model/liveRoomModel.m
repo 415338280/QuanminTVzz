@@ -7,42 +7,41 @@
 //
 
 #import "liveRoomModel.h"
-@class liveRoomliveModel,liveRoomlivewsModel,liveRoomlivewshlsModel,hls3,hls4,hls5;
-@implementation liveRoomModel
 
-@end
-
-@implementation liveRoomliveModel
-
+@implementation RoomModel
 
 
 @end
+@implementation RoomLiveModel
 
-@implementation liveRoomlivewsModel
+@end
+@implementation RoomLiveWsModel
+
+@end
+@implementation RoomLiveWsHlsModel
++(NSDictionary<NSString *,id> *)modelCustomPropertyMapper{
+    return @{@"standrandQuality": @"3",@"RoomLivehighdefinitionModel": @"4",@"RoomLivesuperfinitionModel": @"5"};
+}
+@end
+@implementation RoomLiveWsHlsThreeModel
 
 
 
 @end
-@implementation liveRoomlivewshlsModel
+
+@implementation RoomLivehighdefinitionModel
 
 +(NSDictionary<NSString *,id> *)modelCustomPropertyMapper
 {
-    return @{@"hls3":@"3",@"hlsModel":@"4",@"GhlsModel":@"5"};
+    return @{@"name":@"highdename",@"src":@"highdesrc"};
 }
 
-
 @end
-@implementation hls3
+@implementation RoomLivesuperfinitionModel
 
-
-@end
-@implementation hlsModel
-
-
-
-@end
-@implementation GhlsModel
-
-
++(NSDictionary<NSString *,id> *)modelCustomPropertyMapper
+{
+    return @{@"name":@"supername",@"src":@"supersrc"};
+}
 
 @end

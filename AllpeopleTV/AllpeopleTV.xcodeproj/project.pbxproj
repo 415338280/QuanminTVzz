@@ -23,6 +23,21 @@
 		8537104B1DEC451200757E92 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853710491DEC451200757E92 /* HeadView.xib */; };
 		8537104E1DEC5A9000757E92 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8537104D1DEC5A9000757E92 /* HomeCell.m */; };
 		853710511DEC605200757E92 /* HomeKongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853710501DEC605200757E92 /* HomeKongCell.m */; };
+		85459C391DEFE15D004007AA /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C381DEFE15D004007AA /* IJKMediaFramework.framework */; };
+		85459C3B1DEFE183004007AA /* dyla_movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 85459C3A1DEFE183004007AA /* dyla_movie.mp4 */; };
+		85459C3D1DEFE1FF004007AA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C3C1DEFE1FF004007AA /* AudioToolbox.framework */; };
+		85459C3F1DEFE206004007AA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C3E1DEFE206004007AA /* AVFoundation.framework */; };
+		85459C411DEFE20B004007AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C401DEFE20B004007AA /* CoreGraphics.framework */; };
+		85459C431DEFE211004007AA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C421DEFE211004007AA /* CoreMedia.framework */; };
+		85459C451DEFE219004007AA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C441DEFE219004007AA /* CoreVideo.framework */; };
+		85459C471DEFE222004007AA /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C461DEFE222004007AA /* libbz2.tbd */; };
+		85459C491DEFE228004007AA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C481DEFE228004007AA /* libz.tbd */; };
+		85459C4B1DEFE230004007AA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C4A1DEFE230004007AA /* MediaPlayer.framework */; };
+		85459C4D1DEFE236004007AA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C4C1DEFE236004007AA /* MobileCoreServices.framework */; };
+		85459C4F1DEFE23E004007AA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C4E1DEFE23E004007AA /* OpenGLES.framework */; };
+		85459C511DEFE244004007AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C501DEFE244004007AA /* QuartzCore.framework */; };
+		85459C531DEFE24D004007AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C521DEFE24D004007AA /* UIKit.framework */; };
+		85459C551DEFE253004007AA /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C541DEFE253004007AA /* VideoToolbox.framework */; };
 		855389251DED548500E81F29 /* HeadHomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855389241DED548500E81F29 /* HeadHomePageModel.m */; };
 		855389281DED62E500E81F29 /* HeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855389271DED62E500E81F29 /* HeadViewCell.m */; };
 		857BB8D91DEDB168003F432F /* ani_popover_loading_yz_small副本.gif in Resources */ = {isa = PBXBuildFile; fileRef = 857BB8D61DEDB168003F432F /* ani_popover_loading_yz_small副本.gif */; };
@@ -83,6 +98,21 @@
 		8537104D1DEC5A9000757E92 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		8537104F1DEC605200757E92 /* HomeKongCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeKongCell.h; sourceTree = "<group>"; };
 		853710501DEC605200757E92 /* HomeKongCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeKongCell.m; sourceTree = "<group>"; };
+		85459C381DEFE15D004007AA /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		85459C3A1DEFE183004007AA /* dyla_movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dyla_movie.mp4; sourceTree = "<group>"; };
+		85459C3C1DEFE1FF004007AA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		85459C3E1DEFE206004007AA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		85459C401DEFE20B004007AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85459C421DEFE211004007AA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		85459C441DEFE219004007AA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		85459C461DEFE222004007AA /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		85459C481DEFE228004007AA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		85459C4A1DEFE230004007AA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		85459C4C1DEFE236004007AA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		85459C4E1DEFE23E004007AA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		85459C501DEFE244004007AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		85459C521DEFE24D004007AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85459C541DEFE253004007AA /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		855389231DED548500E81F29 /* HeadHomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadHomePageModel.h; sourceTree = "<group>"; };
 		855389241DED548500E81F29 /* HeadHomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadHomePageModel.m; sourceTree = "<group>"; };
 		855389261DED62E500E81F29 /* HeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewCell.h; sourceTree = "<group>"; };
@@ -146,7 +176,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85459C551DEFE253004007AA /* VideoToolbox.framework in Frameworks */,
+				85459C531DEFE24D004007AA /* UIKit.framework in Frameworks */,
+				85459C511DEFE244004007AA /* QuartzCore.framework in Frameworks */,
+				85459C4F1DEFE23E004007AA /* OpenGLES.framework in Frameworks */,
+				85459C4D1DEFE236004007AA /* MobileCoreServices.framework in Frameworks */,
+				85459C4B1DEFE230004007AA /* MediaPlayer.framework in Frameworks */,
+				85459C491DEFE228004007AA /* libz.tbd in Frameworks */,
+				85459C471DEFE222004007AA /* libbz2.tbd in Frameworks */,
+				85459C451DEFE219004007AA /* CoreVideo.framework in Frameworks */,
+				85459C431DEFE211004007AA /* CoreMedia.framework in Frameworks */,
+				85459C411DEFE20B004007AA /* CoreGraphics.framework in Frameworks */,
+				85459C3F1DEFE206004007AA /* AVFoundation.framework in Frameworks */,
+				85459C3D1DEFE1FF004007AA /* AudioToolbox.framework in Frameworks */,
 				E9CC77EC67BB1E3DE2FDEB9A /* libPods-AllpeopleTV.a in Frameworks */,
+				85459C391DEFE15D004007AA /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +200,19 @@
 		01D2081448DEBDC97CF73592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85459C541DEFE253004007AA /* VideoToolbox.framework */,
+				85459C521DEFE24D004007AA /* UIKit.framework */,
+				85459C501DEFE244004007AA /* QuartzCore.framework */,
+				85459C4E1DEFE23E004007AA /* OpenGLES.framework */,
+				85459C4C1DEFE236004007AA /* MobileCoreServices.framework */,
+				85459C4A1DEFE230004007AA /* MediaPlayer.framework */,
+				85459C481DEFE228004007AA /* libz.tbd */,
+				85459C461DEFE222004007AA /* libbz2.tbd */,
+				85459C441DEFE219004007AA /* CoreVideo.framework */,
+				85459C421DEFE211004007AA /* CoreMedia.framework */,
+				85459C401DEFE20B004007AA /* CoreGraphics.framework */,
+				85459C3E1DEFE206004007AA /* AVFoundation.framework */,
+				85459C3C1DEFE1FF004007AA /* AudioToolbox.framework */,
 				ED4AFB6CB5895657F69A525C /* libPods-AllpeopleTV.a */,
 			);
 			name = Frameworks;
@@ -182,9 +239,11 @@
 		852F39401DE57A4B004F5B92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				85459C381DEFE15D004007AA /* IJKMediaFramework.framework */,
 				857BB8D61DEDB168003F432F /* ani_popover_loading_yz_small副本.gif */,
 				857BB8D71DEDB168003F432F /* ani_popover_loading_yz副本.gif */,
 				857BB8D81DEDB168003F432F /* btn_nav_open_ani_sc_normal副本.gif */,
+				85459C3A1DEFE183004007AA /* dyla_movie.mp4 */,
 				852F39411DE57A65004F5B92 /* Storyboard.storyboard */,
 				852F39451DE57A95004F5B92 /* Images.xcassets */,
 				852F39431DE57A6C004F5B92 /* Launch Screen.storyboard */,
@@ -536,6 +595,7 @@
 				857BB8DB1DEDB168003F432F /* btn_nav_open_ani_sc_normal副本.gif in Resources */,
 				8537104B1DEC451200757E92 /* HeadView.xib in Resources */,
 				852F39421DE57A65004F5B92 /* Storyboard.storyboard in Resources */,
+				85459C3B1DEFE183004007AA /* dyla_movie.mp4 in Resources */,
 				857BB8D91DEDB168003F432F /* ani_popover_loading_yz_small副本.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +791,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resources",
+				);
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AllpeopleTV/Info.plist;
 				INFOPLIST_PREFIX_HEADER = "";
@@ -746,6 +810,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resources",
+				);
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = AllpeopleTV/Info.plist;
 				INFOPLIST_PREFIX_HEADER = "";

@@ -42,10 +42,10 @@
     }];
 }
 
-+(id)getLiveRoomWithPath:(NSString *)path completionHandeler:(void (^)(liveRoomModel *, NSError *))completionHandeler
++(id)getLiveRoomWithPath:(NSString *)path completionHandeler:(void (^)(RoomModel *, NSError *))completionHandeler
 {
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
-        !completionHandeler ?: completionHandeler([liveRoomModel parse:responseObj],error);
+        !completionHandeler ?: completionHandeler([RoomModel parse:responseObj],error);
     }];
     
 }

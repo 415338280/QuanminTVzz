@@ -9,8 +9,11 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
+#import <IJKMediaFramework/IJKMediaFramework.h>
 
 #define MAS_SHORTHAND_GLOBALS
 //第三方

@@ -18,7 +18,7 @@ typedef void(^Myblock)(id * model,NSError* error);
 +getLiveModelWithPage:(NSInteger)page CompletionHandeler:(void(^)(liveModel* model,NSError* error))completionHandeler;
 +getProgramaModelCompletionHandeler:(void(^)(programaModel* Model,NSError* error))completionHandeler;
 +getLiveTVModelWithslug:(NSString*)slug WithPage:(NSInteger)page completionHandeler:(void(^)(liveModel* model,NSError* error))completionHandeler;
-+getLiveRoomWithPath:(NSString*)path completionHandeler:(void(^)(liveRoomModel* Model,NSError* error))completionHandeler;
++getLiveRoomWithPath:(NSString*)path completionHandeler:(void(^)(RoomModel* Model,NSError* error))completionHandeler;
 //获取首页数据
 +getHomePageCompletionHandeler:(void(^)(HomePageModel* Model,NSError* error))completionHandeler;
 // 获取首页头部视图数据
