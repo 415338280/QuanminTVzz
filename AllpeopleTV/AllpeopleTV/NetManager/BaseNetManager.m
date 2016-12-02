@@ -11,8 +11,6 @@
 @implementation BaseNetManager
 + (id)GET:(NSString *)path parameters:(NSDictionary *)parameters completionHandler:(void (^)(id, NSError *))completionHandler{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-//    AFHTTPSessionManager* manager = [[AFHTTPSessionManager alloc]initWithBaseURL:KBeasPath.ZX_URL];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", @"text/plain", nil];
     return [manager GET:path parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@", task.currentRequest.URL.absoluteString);

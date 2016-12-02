@@ -25,6 +25,7 @@
 @property (nonatomic, strong) NSString* view; //人数
 @property (nonatomic, strong) NSString* thumb;//图片
 @property (nonatomic, strong) NSString* uid;
+@property(nonatomic,  strong) NSString* category_name;
 @end
 
 @interface liverecommendModel : NSObject

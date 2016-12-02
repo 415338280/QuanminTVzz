@@ -44,6 +44,11 @@
         _Covc.backgroundColor = [UIColor whiteColor];
         self.Covc.alwaysBounceVertical = YES;
     }
+    ZXFactory* zx = [ZXFactory new];
+    [zx setFunction:^{
+        NSLog(@"栏目");
+    }];
+    [zx createWithBlock:zx.function andItemToVc:self];
     return _Covc;
 }
 -(NoNetView *)noNetView
@@ -78,7 +83,16 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     [self.view addSubview:self.Covc];
+//    ZXFactory* zx = [ZXFactory new];
+//    [zx setFunction:^{
+//        NSLog(@"直播");
+//    }];
+    
+    [ZXFactory addSearchItemToVC:self action:^{
+        NSLog(@"哈哈哈开播啦");
+    }];
     if (!kIsOnline)
     {
         [self refreshContent];

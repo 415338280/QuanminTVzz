@@ -11,4 +11,5 @@
 @interface LiveroomVC : UIViewController
 @property(nonatomic)NSString* livePath;
 -(instancetype)initWithlivePath:(NSString*)path;
+@property(nonatomic,assign,getter=isStarShow,setter=isStarShow:) BOOL Nick;
 @end

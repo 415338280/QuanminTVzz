@@ -9,6 +9,8 @@
 #ifndef Constant_h
 #define Constant_h
 
+
+
 #define KBeasPath @"http://www.quanmin.tv"
 #define kLivePath @"http://www.quanmin.tv/json/play/list_%ld.json"
 
@@ -29,6 +31,7 @@
 // 屏幕宽和高
 #define USWidh  [UIScreen mainScreen].bounds.size.width
 #define USHigt  [UIScreen mainScreen].bounds.size.height
-
+//   
+#define kAppDelegate  ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 #endif /* Constant_h */

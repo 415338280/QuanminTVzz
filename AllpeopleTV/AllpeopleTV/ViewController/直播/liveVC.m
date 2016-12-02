@@ -34,6 +34,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    ZXFactory* zx = [ZXFactory new];
+    [zx setFunction:^{
+        NSLog(@"直播");
+    }];
+    [zx createWithBlock:zx.function andItemToVc:self];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[liveTVCell class] forCellWithReuseIdentifier:@"liveTVCell"];
     MJWeakSelf
@@ -51,6 +56,7 @@
     }];
     [self.collectionView.mj_header beginRefreshing];
     
+    
 //    
     self.collectionView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         [NetManager getLiveModelWithPage:self.page + 1 CompletionHandeler:^(liveModel *model, NSError *error) {
@@ -63,7 +69,7 @@
         }];
     }];
 
-    
+
     
     
 }
@@ -111,9 +117,11 @@
     NSString* rid = self.addData[indexPath.row].uid;
     NSString* livePath = [NSString stringWithFormat:kLiveroomPath,rid];
     LiveroomVC* VC = [[LiveroomVC alloc]initWithlivePath:livePath];
-    [self presentViewController:VC animated:YES completion:^{
-        
-    }];
+    NSString* Nick = self.addData[indexPath.row].category_name;
+    if ([Nick isEqualToString:@"全民星秀"]) {
+        [VC isStarShow:YES];
+    }else [VC isStarShow:NO];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 

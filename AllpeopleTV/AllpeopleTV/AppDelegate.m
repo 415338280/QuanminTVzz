@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "TableViewController.h"
 #import "WelcomeViewController.h"
+#import <SMS_SDK/SMSSDK.h>
+ //解决自定义左上角按钮 后 导致右滑返回失效的问题
 @interface AppDelegate ()
 @property(nonatomic) WelcomeViewController* welcomeVC;
 
@@ -25,7 +27,18 @@
     }
     return _welcomeVC;
 }
++ (AppDelegate *)sharedAppDelegate{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+   //解决自定义左上角按钮 后 导致右滑返回失效的问题
+    
+    //[SMSSDK registerApp:@"19789bfeebab8" withSecret:@"fc97c71b37c7f53c0b6a7494f06b016b"];
+    
+    
+    
+    
+    
     NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
     
     [UITabBar appearance].translucent = NO;
