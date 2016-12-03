@@ -343,7 +343,7 @@
     if (!section) {
       return  CGSizeMake(0, 0);
     }
-    CGFloat higt = USHigt* 25 / 1135;
+    CGFloat higt = USHigt * 25 / 1135;
    return  CGSizeMake(USWidh, higt);
     
 }

@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "TableViewController.h"
 #import "WelcomeViewController.h"
-#import <SMS_SDK/SMSSDK.h>
+
  //解决自定义左上角按钮 后 导致右滑返回失效的问题
 @interface AppDelegate ()
 @property(nonatomic) WelcomeViewController* welcomeVC;

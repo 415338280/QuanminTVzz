@@ -26,7 +26,8 @@
 #import <MJRefresh.h>
 #import <MBProgressHUD.h>
 #import <iCarousel.h>
-
+//获取短信验证码
+#import <SMS_SDK/SMSSDK.h>
 
 // 常量
 #import "AppDelegate.h"

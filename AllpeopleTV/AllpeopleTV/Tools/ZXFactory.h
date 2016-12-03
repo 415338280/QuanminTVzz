@@ -12,5 +12,6 @@
 + (void)addBackItemToVC:(UIViewController*)vc;
 
 + (void)addSearchItemToVC:(UIViewController *)vc action:(void(^)())handler;
++ (void)addGobackItemToVC:(UIViewController*)vc;
 
 @end

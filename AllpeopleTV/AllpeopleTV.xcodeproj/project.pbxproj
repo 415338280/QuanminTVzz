@@ -41,6 +41,7 @@
 		85459C551DEFE253004007AA /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85459C541DEFE253004007AA /* VideoToolbox.framework */; };
 		855389251DED548500E81F29 /* HeadHomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 855389241DED548500E81F29 /* HeadHomePageModel.m */; };
 		855389281DED62E500E81F29 /* HeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 855389271DED62E500E81F29 /* HeadViewCell.m */; };
+		85736A211DF2C904000C17F4 /* RegisteredVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85736A201DF2C904000C17F4 /* RegisteredVC.m */; };
 		857BB8D91DEDB168003F432F /* ani_popover_loading_yz_small副本.gif in Resources */ = {isa = PBXBuildFile; fileRef = 857BB8D61DEDB168003F432F /* ani_popover_loading_yz_small副本.gif */; };
 		857BB8DA1DEDB168003F432F /* ani_popover_loading_yz副本.gif in Resources */ = {isa = PBXBuildFile; fileRef = 857BB8D71DEDB168003F432F /* ani_popover_loading_yz副本.gif */; };
 		857BB8DF1DEDB62D003F432F /* NoNetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 857BB8DE1DEDB62D003F432F /* NoNetView.m */; };
@@ -131,6 +132,8 @@
 		855389241DED548500E81F29 /* HeadHomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadHomePageModel.m; sourceTree = "<group>"; };
 		855389261DED62E500E81F29 /* HeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewCell.h; sourceTree = "<group>"; };
 		855389271DED62E500E81F29 /* HeadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewCell.m; sourceTree = "<group>"; };
+		85736A1F1DF2C904000C17F4 /* RegisteredVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteredVC.h; sourceTree = "<group>"; };
+		85736A201DF2C904000C17F4 /* RegisteredVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteredVC.m; sourceTree = "<group>"; };
 		857BB8D61DEDB168003F432F /* ani_popover_loading_yz_small副本.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ani_popover_loading_yz_small副本.gif"; sourceTree = "<group>"; };
 		857BB8D71DEDB168003F432F /* ani_popover_loading_yz副本.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ani_popover_loading_yz副本.gif"; sourceTree = "<group>"; };
 		857BB8DD1DEDB62D003F432F /* NoNetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoNetView.h; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 			children = (
 				851ED33B1DE7140200C63AC7 /* registerVC.h */,
 				851ED33C1DE7140200C63AC7 /* registerVC.m */,
+				85736A1F1DF2C904000C17F4 /* RegisteredVC.h */,
+				85736A201DF2C904000C17F4 /* RegisteredVC.m */,
 			);
 			name = "注册页面";
 			sourceTree = "<group>";
@@ -746,6 +751,7 @@
 				855389281DED62E500E81F29 /* HeadViewCell.m in Sources */,
 				85DFFA761DDF2C5A00EAEE95 /* liveModel.m in Sources */,
 				851ED3361DE6C8B500C63AC7 /* LiveroomView.m in Sources */,
+				85736A211DF2C904000C17F4 /* RegisteredVC.m in Sources */,
 				858A07521DE3155600201462 /* LiveController.m in Sources */,
 				85D596991DDEEF87009AC9CE /* NetManager.m in Sources */,
 				5512FA4C1DEDF1E200362CF6 /* ZXRefreshHeader.m in Sources */,
