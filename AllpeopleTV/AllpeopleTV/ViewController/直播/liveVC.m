@@ -34,13 +34,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ZXFactory* zx = [ZXFactory new];
-    [zx setFunction:^{
-        NSLog(@"直播");
+    // 添加搜索按钮
+    [ZXFactory addSearchItemToVC:self action:^{
+        
     }];
-    [zx createWithBlock:zx.function andItemToVc:self];
+    //设置背景颜色
     self.collectionView.backgroundColor = [UIColor whiteColor];
+    // 注册
     [self.collectionView registerClass:[liveTVCell class] forCellWithReuseIdentifier:@"liveTVCell"];
+    // 自定义添加动态表头刷新。。
     MJWeakSelf
     [weakSelf.collectionView addHeaderRefresh:^{
         [NetManager getLiveModelWithPage:0 CompletionHandeler:^(liveModel *model, NSError *error) {
@@ -57,7 +59,8 @@
     [self.collectionView.mj_header beginRefreshing];
     
     
-//    
+//    表尾下拉 加载下一页
+    
     self.collectionView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         [NetManager getLiveModelWithPage:self.page + 1 CompletionHandeler:^(liveModel *model, NSError *error) {
             [self.collectionView.mj_footer endRefreshing];

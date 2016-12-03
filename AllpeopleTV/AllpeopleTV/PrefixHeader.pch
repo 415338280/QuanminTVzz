@@ -27,8 +27,10 @@
 #import <MBProgressHUD.h>
 #import <iCarousel.h>
 
-//
+
+// 常量
 #import "AppDelegate.h"
+#import "Constant.h"
 // 返回按钮
 #import "ZXFactory.h"
 // 类方法
@@ -37,8 +39,7 @@
 #import "UIView+HUD.h"
 #import "UIScrollView+Refresh.h"
 
-// 常量
-#import "Constant.h"
+
 
 // tabbar下的四个控制器
 #import "homepageVC.h"

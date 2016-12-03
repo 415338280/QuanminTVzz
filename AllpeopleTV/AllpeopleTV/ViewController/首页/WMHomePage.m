@@ -41,14 +41,14 @@
     self.navigationItem.leftBarButtonItem = btn;
     self.navigationItem.leftBarButtonItem.enabled = NO;
     
-    NSString* path = [[NSBundle mainBundle]pathForResource:@"btn_nav_open_ani_sc_normal副本" ofType:@"gif"];
-    NSData * gifdata = [NSData dataWithContentsOfURL:path.ZX_URL];
-    UIImage* gifImage = [UIImage imageWithSmallGIFData:gifdata scale:3];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"btn_nav_open_ani_sc_normal" ofType:@"gif"];
+    NSData *gifData = [NSData dataWithContentsOfFile:path];
+    UIImage *gifImage = [UIImage imageWithSmallGIFData:gifData scale:3];
     //    UIImageView* image = [[UIImageView alloc]initWithImage:gifImage];
     UIButton* btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     UIButton* btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
     UIButton* btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn1 setImage:gifImage forState:UIControlStateNormal];
+    [btn1 setBackgroundImage:gifImage forState:UIControlStateNormal];
     [btn3 setImage:[UIImage imageNamed:@"btn_nav_search_normal_25x25_"] forState:UIControlStateNormal];
     [btn3 setImage:[UIImage imageNamed:@"btn_nav_search_selected_25x25_"] forState:UIControlStateHighlighted];
     [btn2 setImage:[UIImage imageNamed:@"btn_nav_gz_normal_25x25_"] forState:UIControlStateNormal];

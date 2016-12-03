@@ -44,11 +44,10 @@
         _Covc.backgroundColor = [UIColor whiteColor];
         self.Covc.alwaysBounceVertical = YES;
     }
-    ZXFactory* zx = [ZXFactory new];
-    [zx setFunction:^{
-        NSLog(@"栏目");
+    // 使用ZXFactory  工厂方法 生成 搜索按钮
+    [ZXFactory addSearchItemToVC:self action:^{
+        
     }];
-    [zx createWithBlock:zx.function andItemToVc:self];
     return _Covc;
 }
 -(NoNetView *)noNetView

@@ -11,10 +11,6 @@
 @interface ZXFactory : NSObject
 + (void)addBackItemToVC:(UIViewController*)vc;
 
-@property(nonatomic) void(^function)() ;
-
-- (void)createWithBlock:(void(^)())block andItemToVc:(UIViewController*)vc;
-
 + (void)addSearchItemToVC:(UIViewController *)vc action:(void(^)())handler;
 
 @end

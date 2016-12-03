@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+//表示当前可以旋转 bool值默认为NO
+@property (nonatomic) BOOL isRotating;
 @end
 

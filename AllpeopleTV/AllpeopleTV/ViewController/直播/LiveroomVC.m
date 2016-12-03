@@ -40,9 +40,8 @@
 @property(nonatomic, strong) UIView *middleView;
 // 底部视图
 @property(nonatomic) UIView* bottomView;
-
-
-
+// 横屏 视图界面
+@property(nonatomic) UIView* fullScreenView;
 
 @end
 
@@ -210,15 +209,15 @@
     [viewLb mas_makeConstraints:^(MASConstraintMaker *make) {
         CGFloat higt = USHigt * 20 / 1135;
         make.left.equalTo(higt);
-        
         make.bottom.equalTo(-higt);
+        make.height.equalTo(20);
     }];
     NSInteger viewNum = self.roomModel.view;
     NSString *viewPerson = nil;
     if (viewNum < 10000) {
-        viewPerson = [NSString stringWithFormat:@"  %ld", viewNum];
+        viewPerson = [NSString stringWithFormat:@"  %ld ", viewNum];
     }else{
-        viewPerson = [NSString stringWithFormat:@"  %.1f万", viewNum / 10000.0];
+        viewPerson = [NSString stringWithFormat:@"  %.1f万 ", viewNum / 10000.0];
     }
     NSMutableAttributedString *str = [NSMutableAttributedString new];
     NSTextAttachment *att = [NSTextAttachment new];
@@ -333,6 +332,47 @@
     return _middleView;
 }
 
+#pragma fullScreenView 横屏时的界面布局
+-(UIView *)fullScreenView
+{
+    if (!_fullScreenView) {
+        _fullScreenView.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0];
+        [self.view addSubview:_fullScreenView];
+        [_fullScreenView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(0);
+        }];
+        //添加全民直播水印
+        UIImageView *watermarkIV = [UIImageView new];
+        [_fullScreenView addSubview:watermarkIV];
+        watermarkIV.image = [UIImage imageNamed:@"live_notLiving_image_140x59_"];
+        [watermarkIV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(15);
+            make.top.equalTo(15);
+            make.size.equalTo(CGSizeMake(80, 35));
+        }];
+        //添加返回按钮
+        UIButton *backBtn = [UIButton new];
+        [backBtn setImage:[UIImage imageNamed:@"btn_nav_player_back_normal_30x30_"] forState:UIControlStateNormal];
+        [_fullScreenView addSubview:backBtn];
+        [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(15);
+            make.top.equalTo(10);
+        }];
+        [backBtn addTarget:self action:@selector(changeDeviceOrientation:) forControlEvents:UIControlEventTouchUpInside];
+        //添加暂停按钮
+        _pauseBtn = [UIButton new];
+        [_pauseBtn setImage:[UIImage imageNamed:@"btn_sp_player_zanting_30x30_"] forState:UIControlStateNormal];
+        [_fullScreenView addSubview:_pauseBtn];
+        [_pauseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(10);
+            make.bottom.equalTo(-10);
+        }];
+        [_pauseBtn addTarget:self action:@selector(pauseLive) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _fullScreenView;
+}
+
+
 -(instancetype)initWithlivePath:(NSString *)path
 {
     if (self = [super init]) {
@@ -380,14 +420,15 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
+    kAppDelegate.isRotating = YES; //window不支持旋转
     
-//    kAppDelegate.isRotating = YES; //当前window可旋转
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     self.navigationController.navigationBarHidden = NO;
-//    kAppDelegate.isRotating = NO; //window不支持旋转
+    kAppDelegate.isRotating = NO; //window不支持旋转
 }
+
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
@@ -415,10 +456,13 @@
     
      IJKFFOptions* options = [IJKFFOptions optionsByDefault];
     // 判断当前是不是全民星秀
-    if (self.isStarShow) {
-    _ijkPlayerVC = [[IJKFFMoviePlayerController alloc]initWithContentURLString:self.roomModel.live.ws.hls.superfinition.supersrc withOptions:options];
-    }else _ijkPlayerVC = [[IJKFFMoviePlayerController alloc]initWithContentURLString:self.roomModel.live.ws.hls.standrandQuality.src withOptions:options];
- 
+    if (self.roomModel.live.ws.hls.superfinitionzero.src) {
+        NSLog(@"%d是全民新秀",self.isStarShow);
+    _ijkPlayerVC = [[IJKFFMoviePlayerController alloc]initWithContentURLString:self.roomModel.live.ws.hls.superfinitionzero.src withOptions:options];
+    }else{
+        _ijkPlayerVC = [[IJKFFMoviePlayerController alloc]initWithContentURLString:self.roomModel.live.ws.hls.standrandQuality.src withOptions:options];
+    }
+         NSLog(@"%@",self.roomModel.live.ws.hls.superfinitionzero.src);
     _ijkPlayerVC.playbackRate = 1;
     
     [_ijkPlayerVC prepareToPlay];

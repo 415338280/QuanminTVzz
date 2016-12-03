@@ -18,10 +18,21 @@
 @implementation RoomLiveWsModel
 
 @end
+@implementation RoomLiveWsflvModel
+
+
+
+@end
 @implementation RoomLiveWsHlsModel
 +(NSDictionary<NSString *,id> *)modelCustomPropertyMapper{
-    return @{@"standrandQuality": @"3",@"RoomLivehighdefinitionModel": @"4",@"RoomLivesuperfinitionModel": @"5"};
+    return @{@"standrandQuality": @"3",@"RoomLivehighdefinitionModel": @"4",@"RoomLivesuperfinitionModel": @"5"
+             ,@"superfinitionzero":@"0"};
 }
+@end
+
+@implementation RoomLivesuperfinitionzeroModel
+
+
 @end
 @implementation RoomLiveWsHlsThreeModel
 

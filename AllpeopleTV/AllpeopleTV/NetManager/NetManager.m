@@ -18,7 +18,7 @@
     NSString* path = nil;
     if (page) {
          path = [NSString stringWithFormat:kLivePath,page];
-    }path = kLivePath0;
+    }else path = kLivePath0;
 
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
         !completionHandeler ?: completionHandeler([liveModel parse:responseObj],error);

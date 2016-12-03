@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550DA13F1DF1CD190059075A /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 550DA13E1DF1CD190059075A /* SearchVC.m */; };
 		5512FA4C1DEDF1E200362CF6 /* ZXRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5512FA4B1DEDF1E200362CF6 /* ZXRefreshHeader.m */; };
 		851ED3301DE6C83300C63AC7 /* LiveroomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED32F1DE6C83300C63AC7 /* LiveroomVC.m */; };
 		851ED3331DE6C88200C63AC7 /* LiveroomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 851ED3321DE6C88200C63AC7 /* LiveroomCell.m */; };
@@ -80,6 +81,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550DA13D1DF1CD190059075A /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
+		550DA13E1DF1CD190059075A /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
 		5512FA4A1DEDF1E200362CF6 /* ZXRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXRefreshHeader.h; sourceTree = "<group>"; };
 		5512FA4B1DEDF1E200362CF6 /* ZXRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXRefreshHeader.m; sourceTree = "<group>"; };
 		69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllpeopleTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllpeopleTV/Pods-AllpeopleTV.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +265,15 @@
 				69EA250167B32B960892BA41 /* Pods-AllpeopleTV.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		550DA13C1DF1CCD00059075A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				550DA13D1DF1CD190059075A /* SearchVC.h */,
+				550DA13E1DF1CD190059075A /* SearchVC.m */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		851ED33A1DE7139500C63AC7 /* 注册页面 */ = {
@@ -490,6 +502,7 @@
 		85D596AD1DDEF328009AC9CE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				550DA13C1DF1CCD00059075A /* Search */,
 				85DB082F1DEED9F100D93C16 /* 欢迎界面 */,
 				857BB8DC1DEDB610003F432F /* View */,
 				858A07561DE31B7E00201462 /* Layout */,
@@ -725,6 +738,7 @@
 				85D596A61DDEF0DC009AC9CE /* NSObject+Pares.m in Sources */,
 				85D596A31DDEF0B4009AC9CE /* NSString+ZX_Method.m in Sources */,
 				858A07441DE2963F00201462 /* programaModel.m in Sources */,
+				550DA13F1DF1CD190059075A /* SearchVC.m in Sources */,
 				853710511DEC605200757E92 /* HomeKongCell.m in Sources */,
 				851ED3301DE6C83300C63AC7 /* LiveroomVC.m in Sources */,
 				85DFFA7F1DDF3BA200EAEE95 /* llvelayout.m in Sources */,

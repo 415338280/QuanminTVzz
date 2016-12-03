@@ -10,4 +10,9 @@
 
 @interface AppDelegate (ZX)
 - (void)configSystem;
+
+//获取当前应用程序单例
++ (AppDelegate *)sharedAppDelegate;
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 @end

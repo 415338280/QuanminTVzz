@@ -226,6 +226,8 @@
         [self.icVC mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(0);
         }];
+        //先停掉 上一个定时器 否则 会造成内存泄漏
+        [self.timer invalidate];
         self.timer = [NSTimer bk_scheduledTimerWithTimeInterval:4 block:^(NSTimer *timer) {
             _icVC.currentItemIndex++;
         } repeats:YES];

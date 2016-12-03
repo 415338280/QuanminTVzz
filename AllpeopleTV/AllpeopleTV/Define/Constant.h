@@ -31,7 +31,8 @@
 // 屏幕宽和高
 #define USWidh  [UIScreen mainScreen].bounds.size.width
 #define USHigt  [UIScreen mainScreen].bounds.size.height
-//   
+//
+#import "AppDelegate.h"
 #define kAppDelegate  ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 #endif /* Constant_h */

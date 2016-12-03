@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class RoomLiveModel, RoomLiveWsModel, RoomLiveWsHlsModel, RoomLiveWsHlsThreeModel,RoomLivehighdefinitionModel,RoomLivesuperfinitionModel;
+@class RoomLiveModel, RoomLiveWsModel, RoomLiveWsHlsModel, RoomLiveWsHlsThreeModel,RoomLivehighdefinitionModel,RoomLivesuperfinitionModel,RoomLiveWsflvModel,RoomLiveWssuperflvModel,RoomLivesuperfinitionzeroModel;
 
 @interface RoomModel : NSObject
 @property (nonatomic, strong) NSArray * admins;
@@ -55,24 +55,50 @@
 @property (nonatomic, strong) NSString * defMobile;
 @property (nonatomic, strong) NSString * defPc;
 @property (nonatomic, strong) RoomLiveWsHlsModel * hls;
+@property (nonatomic, strong) RoomLiveWsflvModel * flv;
 @property (nonatomic, strong) NSString * name;
 @property (nonatomic, assign) NSInteger v;
+@end
+
+@interface RoomLiveWsflvModel : NSObject
+
+@property (nonatomic, strong) RoomLiveWssuperflvModel * superflv;
+
+@property (nonatomic, strong) NSString * main_mobile;
+
+@property (nonatomic, strong) NSString * main_pc;
+
+@end
+
+@interface RoomLiveWssuperflvModel : NSObject
+
+@property (nonatomic, strong) NSString * name;
+
+@property (nonatomic, strong) NSString * src;
+
 @end
 
 @interface RoomLiveWsHlsModel : NSObject
 @property (nonatomic, strong) RoomLiveWsHlsThreeModel * standrandQuality;
 @property (nonatomic, strong) RoomLivehighdefinitionModel * highdefinition;
 @property (nonatomic, strong) RoomLivesuperfinitionModel * superfinition;
+@property (nonatomic, strong) RoomLivesuperfinitionzeroModel * superfinitionzero;
 
 @property (nonatomic, assign) NSInteger mainMobile;
 @property (nonatomic, assign) NSInteger mainPc;
+@end
+
+@interface RoomLivesuperfinitionzeroModel : NSObject
+
+@property (nonatomic, strong) NSString * name;
+@property (nonatomic, strong) NSString * src;
+
 @end
 
 @interface RoomLiveWsHlsThreeModel : NSObject
 
 @property (nonatomic, strong) NSString * name;
 @property (nonatomic, strong) NSString * src;
-
 
 @end
 
